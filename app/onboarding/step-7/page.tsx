@@ -81,7 +81,7 @@ function DepthCard({ option, selected, onSelect }: DepthCardProps) {
         "relative w-full text-left rounded-[22px] bg-white p-5 overflow-hidden transition-all duration-200",
         selected
           ? "border-2 border-forest-800 shadow-[0_4px_28px_rgba(22,47,25,0.18)]"
-          : "border border-[#e2ebe0] shadow-[0_1px_8px_rgba(0,0,0,0.05)]"
+          : "border border-sage-200 shadow-[0_1px_8px_rgba(0,0,0,0.05)]"
       )}
     >
       {/* ── Decorative icon — top right, faded ──────────────────────── */}
@@ -100,7 +100,7 @@ function DepthCard({ option, selected, onSelect }: DepthCardProps) {
         <div
           className={cn(
             "w-11 h-11 flex items-center justify-center rounded-2xl shrink-0 transition-colors duration-200",
-            selected ? "bg-brand-100" : "bg-[#e8f2e5]"
+            selected ? "bg-brand-100" : "bg-brand-50"
           )}
         >
           <span
@@ -144,7 +144,7 @@ function DepthCard({ option, selected, onSelect }: DepthCardProps) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             transition={{ type: "spring", stiffness: 500, damping: 22 }}
-            className="absolute top-3.5 right-3.5 w-5 h-5 rounded-full bg-brand-500 flex items-center justify-center"
+            className="absolute top-3.5 right-3.5 w-5 h-5 rounded-full bg-brand-600 flex items-center justify-center"
           >
             <Check size={11} className="text-white" strokeWidth={3} />
           </motion.div>
@@ -185,7 +185,7 @@ export default function StepSevenDepth() {
         titleNode={
           <>
             What level do you{" "}
-            <em className="text-brand-500 not-italic font-bold">prefer?</em>
+            <em className="text-brand-600 not-italic font-bold">prefer?</em>
           </>
         }
         subtitle="Tailor your reading journey. Choose a pace and complexity that aligns with your current focus and cognitive bandwidth."

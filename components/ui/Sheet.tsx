@@ -55,16 +55,16 @@ export default function Sheet({
       >
         {/* Handle */}
         <div className="flex justify-center pt-3 pb-1">
-          <div className="w-10 h-1 bg-gray-200 rounded-full" />
+          <div className="w-10 h-1 bg-sage-200 rounded-full" />
         </div>
 
         {/* Header */}
         {title && (
-          <div className="flex items-center justify-between px-5 py-3 border-b border-gray-100">
-            <h2 className="text-[16px] font-semibold text-gray-900">{title}</h2>
+          <div className="flex items-center justify-between px-5 py-3 border-b border-sage-200">
+            <h2 className="text-[16px] font-semibold text-ink-700">{title}</h2>
             <button
               onClick={onClose}
-              className="w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100 text-gray-500"
+              className="w-8 h-8 flex items-center justify-center rounded-xl bg-sage-100 text-ink-500"
             >
               <X size={16} />
             </button>

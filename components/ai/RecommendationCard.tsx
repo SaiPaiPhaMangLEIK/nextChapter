@@ -24,7 +24,7 @@ export default function RecommendationCard({
       <div className="flex gap-4 p-4">
         {/* Cover */}
         <Link href={`/book/${rec.book.id}`} className="shrink-0">
-          <div className="w-[60px] h-[90px] rounded-xl overflow-hidden bg-gray-100 shadow-sm">
+          <div className="w-[60px] h-[90px] rounded-xl overflow-hidden bg-sage-100 shadow-sm">
             {rec.book.coverUrl ? (
               <Image
                 src={rec.book.coverUrl}
@@ -48,20 +48,20 @@ export default function RecommendationCard({
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0">
               <Link href={`/book/${rec.book.id}`}>
-                <h3 className="text-[14px] font-semibold text-gray-900 leading-snug line-clamp-2">
+                <h3 className="text-[14px] font-semibold text-ink-700 leading-snug line-clamp-2">
                   {rec.book.title}
                 </h3>
               </Link>
-              <p className="text-xs text-gray-400 mt-0.5">{rec.book.author}</p>
+              <p className="text-xs text-ink-400 mt-0.5">{rec.book.author}</p>
             </div>
             <div className="flex items-center gap-1 shrink-0">
-              <Sparkles size={11} className="text-brand-500" />
+              <Sparkles size={11} className="text-brand-600" />
               <span className="text-xs font-semibold text-brand-600">{confidencePercent}%</span>
             </div>
           </div>
 
           {/* AI reason */}
-          <p className="text-xs text-gray-500 mt-2 leading-relaxed line-clamp-2">{rec.reason}</p>
+          <p className="text-xs text-ink-500 mt-2 leading-relaxed line-clamp-2">{rec.reason}</p>
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export default function RecommendationCard({
       <div className="px-4 pb-4">
         <button
           onClick={() => onAdd?.(rec)}
-          className="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-brand-50 text-brand-700 text-sm font-medium active:bg-brand-100 transition-colors"
+          className="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-brand-50 text-brand-600 text-sm font-medium active:bg-brand-100 transition-colors"
         >
           <BookPlus size={15} />
           Add to Library

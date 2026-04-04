@@ -28,8 +28,8 @@ export default function DiscoverPage() {
         title="Discover"
         subtitle="What to read next"
         right={
-          <button className="w-9 h-9 bg-white rounded-2xl shadow-card flex items-center justify-center">
-            <Search size={16} className="text-gray-600" />
+            <button className="w-9 h-9 bg-white rounded-2xl shadow-card flex items-center justify-center">
+            <Search size={16} className="text-ink-600" />
           </button>
         }
       />
@@ -37,12 +37,12 @@ export default function DiscoverPage() {
       {/* ─── AI recommendations ─────────────────────────────────── */}
       <div className="px-5 pt-4">
         <div className="flex items-center gap-2 mb-3">
-          <div className="w-7 h-7 rounded-xl bg-brand-500 flex items-center justify-center">
+          <div className="w-7 h-7 rounded-xl bg-brand-600 flex items-center justify-center">
             <Sparkles size={14} className="text-white" />
           </div>
           <div>
-            <h2 className="text-[15px] font-bold text-gray-900">Picked for You</h2>
-            <p className="text-[11px] text-gray-400">Based on your reading history</p>
+            <h2 className="text-[15px] font-bold text-ink-700">Picked for You</h2>
+            <p className="text-[11px] text-ink-400">Based on your reading history</p>
           </div>
         </div>
 
@@ -57,8 +57,8 @@ export default function DiscoverPage() {
       <div className="pt-6">
         <div className="px-5 mb-3">
           <div className="flex items-center gap-2">
-            <TrendingUp size={15} className="text-brand-500" />
-            <h2 className="text-[15px] font-bold text-gray-900">Browse by Genre</h2>
+            <TrendingUp size={15} className="text-brand-600" />
+            <h2 className="text-[15px] font-bold text-ink-700">Browse by Genre</h2>
           </div>
         </div>
 
@@ -70,8 +70,8 @@ export default function DiscoverPage() {
               className={cn(
                 "shrink-0 px-4 py-2 rounded-2xl text-sm font-medium transition-all duration-200",
                 activeGenre === genre
-                  ? "bg-brand-500 text-white shadow-float"
-                  : "bg-white text-gray-500 shadow-card"
+                  ? "bg-brand-600 text-white shadow-float"
+                  : "bg-white text-ink-500 shadow-card"
               )}
             >
               {genre}
@@ -91,7 +91,7 @@ export default function DiscoverPage() {
 
       {/* ─── Reading journey prompt ──────────────────────────────── */}
       <div className="px-5 pt-5 pb-4">
-        <div className="bg-gradient-to-br from-brand-500 to-sage-600 rounded-2xl p-5">
+        <div className="bg-gradient-to-br from-brand-600 to-forest-700 rounded-2xl p-5">
           <Badge variant="green" size="sm" className="bg-white/20 text-white border-0 mb-2">
             Premium
           </Badge>

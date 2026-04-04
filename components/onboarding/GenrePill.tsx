@@ -20,7 +20,7 @@ export default function GenrePill({ label, selected, onSelect }: GenrePillProps)
         "px-4 py-[9px] rounded-full text-[13px] font-medium transition-colors duration-200",
         selected
           ? "bg-forest-800 text-white shadow-sm"
-          : "bg-white text-ink-700 border border-[#e2ebe0] shadow-[0_1px_4px_rgba(0,0,0,0.04)]"
+          : "bg-white text-ink-700 border border-sage-200 shadow-[0_1px_4px_rgba(0,0,0,0.04)]"
       )}
     >
       {label}

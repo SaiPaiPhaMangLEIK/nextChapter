@@ -14,8 +14,8 @@ export default function IntroFooter() {
     >
       {/* Wordmark */}
       <div className="flex items-center justify-center gap-1.5 mb-5">
-        <div className="w-6 h-6 rounded-lg bg-brand-500/20 flex items-center justify-center">
-          <BookOpen size={12} className="text-brand-500" strokeWidth={2} />
+        <div className="w-6 h-6 rounded-lg bg-brand-600/20 flex items-center justify-center">
+          <BookOpen size={12} className="text-brand-600" strokeWidth={2} />
         </div>
         <span className="text-xs font-semibold text-ink-400 tracking-wide">
           NextChapter

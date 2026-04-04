@@ -4,13 +4,13 @@ import { useState } from "react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import {
-  Star,
-  BookOpen,
-  Calendar,
-  Hash,
-  ChevronDown,
+  Flame,
+  TrendingUp,
+  CalendarClock,
+  Timer,
   Share2,
   BookmarkPlus,
+  BookOpen,
   CheckCircle2,
   Sparkles,
 } from "lucide-react";
@@ -18,9 +18,9 @@ import PageHeader from "@/components/ui/PageHeader";
 import ProgressTracker from "@/components/tracker/ProgressTracker";
 import AskThisBook from "@/components/ai/AskThisBook";
 import RecommendationCard from "@/components/ai/RecommendationCard";
-import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
-import { MOCK_BOOKS, MOCK_RECOMMENDATIONS } from "@/lib/mock-data";
+import RingStat from "@/components/ui/RingStat";
+import { MOCK_BOOKS, MOCK_RECOMMENDATIONS, MOCK_USER } from "@/lib/mock-data";
 import { statusLabel, statusColor, truncate } from "@/lib/utils";
 
 export default function BookDetailPage() {
@@ -31,119 +31,182 @@ export default function BookDetailPage() {
 
   const relatedRecs = MOCK_RECOMMENDATIONS.slice(0, 2);
 
+  // ── Derived reading stats ────────────────────────────────────────────────
+  const avgPagesPerDay = MOCK_USER.readingGoal?.pagesPerDay ?? 24;
+  const remaining = book.progress
+    ? book.progress.totalPages - book.progress.currentPage
+    : null;
+  const daysLeft = remaining != null ? Math.ceil(remaining / avgPagesPerDay) : null;
+  const sessionCount = book.progress
+    ? Math.round(book.progress.currentPage / 18)
+    : null;
+
+  const finishDate =
+    daysLeft != null
+      ? new Date(Date.now() + daysLeft * 24 * 60 * 60 * 1000)
+      : null;
+  const finishMonthAbbr = finishDate
+    ? finishDate.toLocaleDateString("en-US", { month: "short" }).toUpperCase()
+    : "";
+  const finishDay = finishDate ? finishDate.getDate() : 0;
+  const finishLabel = finishDate
+    ? finishDate.toLocaleDateString("en-US", { month: "long", day: "numeric" })
+    : "";
+  const pagesTodayRemaining = Math.max(0, avgPagesPerDay - 25); // mock: 25 read today
+
+  const gridStats = [
+    { icon: Flame, label: "Streak", value: `${MOCK_USER.stats.currentStreak} days` },
+    { icon: TrendingUp, label: "Average", value: `${avgPagesPerDay} pgs/day` },
+    { icon: CalendarClock, label: "Finishing in", value: daysLeft != null ? `~${daysLeft} days` : "—" },
+    { icon: Timer, label: "Sessions", value: sessionCount != null ? `${sessionCount} total` : "—" },
+  ];
+
+  const ringStats = [
+    {
+      value: MOCK_USER.stats.currentStreak,
+      unit: "DAYS",
+      label: "STREAK",
+      fillPercent: Math.min((MOCK_USER.stats.currentStreak / Math.max(MOCK_USER.stats.longestStreak, 1)) * 100, 100),
+    },
+    {
+      value: avgPagesPerDay,
+      unit: "PGS/D",
+      label: "AVERAGE",
+      fillPercent: Math.min((avgPagesPerDay / 50) * 100, 100),
+    },
+    {
+      value: sessionCount ?? 0,
+      unit: "TOTAL",
+      label: "SESSIONS",
+      fillPercent: Math.min(((sessionCount ?? 0) / 15) * 100, 100),
+    },
+  ];
+
+  // ── Mock reading session history ─────────────────────────────────────────
+  const mockFlowSessions = book.progress
+    ? [
+        {
+          from: Math.max(0, book.progress.currentPage - 32),
+          to: book.progress.currentPage,
+          time: "Today, 8:45 AM",
+          pages: 32,
+        },
+        {
+          from: Math.max(0, book.progress.currentPage - 54),
+          to: Math.max(0, book.progress.currentPage - 32),
+          time: "Yesterday, 9:20 PM",
+          pages: 22,
+        },
+      ]
+    : [];
+
+  const isProgress = activeSection === "progress";
+
   return (
     <div className="mobile-page bg-cream animate-fade-in">
+      {/* ─── Header ─────────────────────────────────────────────── */}
       <PageHeader
         showBack
         transparent
         right={
-          <button className="w-9 h-9 bg-white/80 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-card">
-            <Share2 size={16} className="text-gray-600" />
-          </button>
+          !isProgress ? (
+            <button className="w-9 h-9 bg-white/80 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-card">
+              <Share2 size={16} className="text-ink-600" />
+            </button>
+          ) : undefined
         }
       />
 
       {/* ─── Book hero ──────────────────────────────────────────── */}
-      <div className="relative">
-        {/* Background blur cover */}
-        <div className="absolute inset-0 overflow-hidden -z-10">
-          {book.coverUrl && (
-            <Image
-              src={book.coverUrl}
-              alt=""
-              fill
-              className="object-cover blur-2xl opacity-30 scale-110"
-            />
-          )}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cream" />
-        </div>
-
-        <div className="flex flex-col items-center pt-2 pb-6 px-5">
-          {/* Cover */}
-          <div className="w-[120px] h-[180px] rounded-2xl overflow-hidden shadow-2xl">
+      <div className="px-5 pt-2 pb-5">
+        <div className="bg-sage-50 rounded-3xl p-4 flex gap-4 items-center">
+          {/* Cover with optional progress badge */}
+          <div className="relative shrink-0 w-[100px] h-[150px] rounded-2xl overflow-hidden bg-gray-900 shadow-xl">
             {book.coverUrl ? (
               <Image
                 src={book.coverUrl}
                 alt={book.title}
-                width={120}
-                height={180}
+                width={100}
+                height={150}
                 className="w-full h-full object-cover"
               />
             ) : (
-              <div className="w-full h-full bg-gradient-to-br from-brand-100 to-sage-100 flex items-center justify-center p-4">
-                <span className="text-sm text-brand-700 font-semibold text-center">{book.title}</span>
+              <div className="w-full h-full bg-gradient-to-br from-brand-100 to-sage-100 flex items-center justify-center p-3">
+                <span className="text-xs text-brand-700 font-semibold text-center leading-tight">
+                  {book.title}
+                </span>
+              </div>
+            )}
+            {/* Progress % badge — shown in progress mode */}
+            {isProgress && book.progress && (
+              <div className="absolute top-2 left-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-lg leading-tight">
+                {book.progress.percentage}%
               </div>
             )}
           </div>
 
-          {/* Title & Author */}
-          <div className="text-center mt-4">
-            <h1 className="text-[20px] font-bold text-gray-900 leading-tight">{book.title}</h1>
-            <p className="text-sm text-gray-500 mt-1">{book.author}</p>
-          </div>
-
-          {/* Rating */}
-          {book.rating && (
-            <div className="flex items-center gap-1 mt-2">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star
-                  key={i}
-                  size={14}
-                  className={
-                    i < book.rating!
-                      ? "text-amber-400 fill-amber-400"
-                      : "text-gray-200 fill-gray-200"
-                  }
-                />
-              ))}
-              <span className="text-xs text-gray-400 ml-1">{book.rating}/5</span>
-            </div>
-          )}
-
-          {/* Status badge + genres */}
-          <div className="flex items-center gap-2 mt-3 flex-wrap justify-center">
-            <span className={`text-xs font-medium px-2.5 py-1 rounded-xl ${statusColor(book.status)}`}>
+          {/* Info */}
+          <div className="flex-1 min-w-0">
+            <span
+              className={`inline-flex text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-lg ${statusColor(book.status)}`}
+            >
               {statusLabel(book.status)}
             </span>
-            {book.genre.map((g) => (
-              <Badge key={g} size="sm">{g}</Badge>
+            <h1 className="text-[18px] font-bold text-ink-700 leading-tight mt-2">
+              {book.title}
+            </h1>
+            <p className="text-[13px] text-ink-400 italic mt-0.5 truncate">{book.author}</p>
+
+            {/* Genre tags — shown in progress mode instead of % */}
+            {isProgress ? (
+              <div className="flex flex-wrap gap-1.5 mt-2">
+                {book.genre.slice(0, 2).map((g) => (
+                  <span
+                    key={g}
+                    className="text-[9px] font-semibold tracking-wide uppercase px-2 py-1 bg-sage-100 text-ink-500 rounded-full"
+                  >
+                    {g}
+                  </span>
+                ))}
+              </div>
+            ) : (
+              book.progress && (
+                <div className="flex items-baseline gap-2 mt-3">
+                  <span className="text-[26px] font-bold text-brand-600 leading-none">
+                    {book.progress.percentage}%
+                  </span>
+                  <span className="text-[12px] text-ink-400">
+                    {book.progress.currentPage}/{book.progress.totalPages} pages
+                  </span>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* ─── Quick stats (hidden in progress tab) ───────────────── */}
+      {!isProgress && (
+        <div className="px-5 pb-5">
+          <div className="bg-white rounded-2xl px-4 py-5  flex items-center justify-around">
+            {ringStats.map((s) => (
+              <RingStat key={s.label} {...s} />
             ))}
           </div>
         </div>
-      </div>
-
-      {/* ─── Quick stats ────────────────────────────────────────── */}
-      <div className="px-5">
-        <div className="grid grid-cols-3 gap-3">
-          {[
-            { icon: BookOpen, label: "Pages", value: book.pageCount ?? "—" },
-            { icon: Calendar, label: "Year", value: book.publishedYear ?? "—" },
-            {
-              icon: Hash,
-              label: "Progress",
-              value: book.progress ? `${book.progress.percentage}%` : "—",
-            },
-          ].map(({ icon: Icon, label, value }) => (
-            <div key={label} className="bg-white rounded-2xl p-3.5 shadow-card text-center">
-              <Icon size={16} className="text-brand-500 mx-auto mb-1" />
-              <p className="text-[15px] font-bold text-gray-900">{value}</p>
-              <p className="text-[10px] text-gray-400 mt-0.5">{label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      )}
 
       {/* ─── Section tabs ───────────────────────────────────────── */}
-      <div className="px-5 pt-5">
-        <div className="flex gap-1 bg-gray-100 p-1 rounded-2xl">
+      <div className="px-5">
+        <div className="flex gap-1 bg-sage-100 p-1 rounded-2xl">
           {(["overview", "progress", "ai"] as const).map((section) => (
             <button
               key={section}
               onClick={() => setActiveSection(section)}
               className={`flex-1 py-2 rounded-xl text-sm font-medium transition-all capitalize ${
                 activeSection === section
-                  ? "bg-white text-gray-900 shadow-card"
-                  : "text-gray-400"
+                  ? "bg-white text-ink-700 shadow-card"
+                  : "text-ink-400"
               }`}
             >
               {section === "ai" ? "Ask AI" : section}
@@ -153,55 +216,47 @@ export default function BookDetailPage() {
       </div>
 
       {/* ─── Section content ────────────────────────────────────── */}
-      <div className="px-5 pt-4 space-y-4">
+      <div key={activeSection} className="px-5 pt-4 pb-2 space-y-4 animate-slide-up">
+        {/* ── Overview ── */}
         {activeSection === "overview" && (
           <>
-            {/* Description */}
-            {book.description && (
+            {(book.description || (book.tags && book.tags.length > 0) || book.genre.length > 0) && (
               <div className="bg-white rounded-2xl p-4 shadow-card">
-                <h3 className="text-[13px] font-semibold text-gray-900 mb-2">About this book</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {showFullDesc ? book.description : truncate(book.description, 180)}
-                </p>
-                {book.description.length > 180 && (
-                  <button
-                    onClick={() => setShowFullDesc(!showFullDesc)}
-                    className="flex items-center gap-1 text-brand-600 text-xs font-medium mt-2"
-                  >
-                    {showFullDesc ? "Show less" : "Read more"}
-                    <ChevronDown
-                      size={14}
-                      className={`transition-transform ${showFullDesc ? "rotate-180" : ""}`}
-                    />
-                  </button>
+                {(book.genre.length > 0 || (book.tags && book.tags.length > 0)) && (
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {[...book.genre, ...(book.tags ?? [])].map((label) => (
+                      <span
+                        key={label}
+                        className="text-[9px] font-semibold tracking-wide uppercase px-3 py-1 bg-sage-100 text-ink-500 rounded-full"
+                      >
+                        {label}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                {book.description && (
+                  <>
+                    <h3 className="text-[15px] font-bold text-ink-700 mb-2">About the Book</h3>
+                    <p className="text-sm text-ink-500 leading-relaxed">
+                      {showFullDesc ? book.description : truncate(book.description, 180)}
+                      {book.description.length > 180 && (
+                        <button
+                          onClick={() => setShowFullDesc(!showFullDesc)}
+                          className="text-brand-600 font-semibold ml-1 inline"
+                        >
+                          {showFullDesc ? "Show less" : "Read more"}
+                        </button>
+                      )}
+                    </p>
+                  </>
                 )}
               </div>
             )}
 
-            {/* Tags */}
-            {book.tags && book.tags.length > 0 && (
-              <div className="bg-white rounded-2xl p-4 shadow-card">
-                <h3 className="text-[13px] font-semibold text-gray-900 mb-3">Tags</h3>
-                <div className="flex flex-wrap gap-2">
-                  {book.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-3 py-1.5 bg-brand-50 text-brand-700 rounded-xl font-medium"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Recommended after */}
             <div>
-              <div className="flex items-center justify-between mb-3">
-                <div className="flex items-center gap-2">
-                  <Sparkles size={14} className="text-brand-500" />
-                  <h3 className="text-[14px] font-semibold text-gray-900">Read Next</h3>
-                </div>
+              <div className="flex items-center gap-2 mb-3">
+                <Sparkles size={14} className="text-brand-600" />
+                <h3 className="text-[14px] font-semibold text-ink-700">Read Next</h3>
               </div>
               <div className="space-y-3">
                 {relatedRecs.map((rec) => (
@@ -212,35 +267,119 @@ export default function BookDetailPage() {
           </>
         )}
 
+        {/* ── Progress (focused mode) ── */}
         {activeSection === "progress" && (
-          <ProgressTracker book={book} />
+          <>
+            {/* Update Progress card */}
+            <ProgressTracker book={book} />
+
+            {/* Stats 2×2 grid */}
+            <div className="grid grid-cols-2 gap-3">
+              {gridStats.map(({ icon: Icon, label, value }) => (
+                <div key={label} className="bg-white rounded-2xl p-4 shadow-card">
+                  <Icon size={18} className="text-brand-600 mb-3" />
+                  <p className="text-[10px] font-semibold tracking-wide text-ink-400 uppercase mb-1">
+                    {label}
+                  </p>
+                  <p className="text-[16px] font-bold text-ink-700 leading-tight">{value}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Estimated Completion */}
+            {finishDate && (
+              <div className="bg-white rounded-2xl p-4 shadow-card flex items-center gap-4">
+                <div className="bg-brand-600 text-white rounded-2xl px-3 py-2 text-center shrink-0 min-w-[52px]">
+                  <p className="text-[9px] font-bold uppercase tracking-widest leading-none mb-1">
+                    {finishMonthAbbr}
+                  </p>
+                  <p className="text-[24px] font-bold leading-none">{finishDay}</p>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-[13px] font-semibold text-ink-700">Estimated Completion</p>
+                  <p className="text-xs text-ink-500 mt-0.5 leading-snug">
+                    Read{" "}
+                    <span className="text-brand-600 font-semibold">
+                      {pagesTodayRemaining} more pages
+                    </span>{" "}
+                    today to finish by {finishLabel}.
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Recent Flow */}
+            {mockFlowSessions.length > 0 && (
+              <div>
+                <p className="text-[11px] font-bold tracking-widest text-ink-400 uppercase mb-3">
+                  Recent Flow
+                </p>
+                <div className="space-y-3">
+                  {mockFlowSessions.map((session) => (
+                    <div
+                      key={session.time}
+                      className="bg-white rounded-2xl p-4 shadow-card flex items-center gap-3"
+                    >
+                      <div className="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center shrink-0">
+                        <BookOpen size={16} className="text-brand-600" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-[13px] font-semibold text-ink-700">
+                          Pages {session.from} → {session.to}
+                        </p>
+                        <p className="text-[11px] text-ink-400 mt-0.5">{session.time}</p>
+                      </div>
+                      <span className="text-[13px] font-semibold text-brand-600 shrink-0">
+                        +{session.pages} pgs
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </>
         )}
 
-        {activeSection === "ai" && (
-          <AskThisBook book={book} isPremium={false} />
-        )}
+        {/* ── Ask AI ── */}
+        {activeSection === "ai" && <AskThisBook book={book} isPremium={false} />}
       </div>
 
-      {/* ─── Action buttons ─────────────────────────────────────── */}
-      <div className="px-5 pt-5 pb-4">
-        <div className="flex gap-3">
-          <Button
-            variant="outline"
-            size="lg"
-            className="flex-1"
-            icon={<BookmarkPlus size={17} />}
-          >
-            Save
-          </Button>
-          <Button
-            variant="primary"
-            size="lg"
-            className="flex-1"
-            icon={<CheckCircle2 size={17} />}
-          >
-            {book.status === "reading" ? "Mark Done" : "Start Reading"}
-          </Button>
-        </div>
+      {/* ─── Bottom action buttons ───────────────────────────────── */}
+      <div className="px-5 pt-4 pb-6">
+        {isProgress ? (
+          <div className="flex gap-3">
+            <Button variant="outline" size="lg" className="flex-1">
+              Submit Page
+            </Button>
+            <Button
+              variant="primary"
+              size="lg"
+              className="flex-1"
+              icon={<CheckCircle2 size={17} />}
+            >
+              Mark Done
+            </Button>
+          </div>
+        ) : (
+          <div className="flex gap-3">
+            <Button
+              variant="outline"
+              size="lg"
+              className="flex-1"
+              icon={<BookmarkPlus size={17} />}
+            >
+              Save
+            </Button>
+            <Button
+              variant="primary"
+              size="lg"
+              className="flex-1"
+              icon={<CheckCircle2 size={17} />}
+            >
+              {book.status === "reading" ? "Mark Done" : "Start Reading"}
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );

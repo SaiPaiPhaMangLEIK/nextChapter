@@ -20,7 +20,7 @@ export default function CommunitySection() {
       className="px-5 pt-2 pb-4"
     >
       <div className="bg-white rounded-3xl px-6 py-7 shadow-card">
-        <h3 className="text-[20px] font-bold text-ink-900 leading-tight tracking-tight">
+        <h3 className="text-[20px] font-bold text-ink-700 leading-tight tracking-tight">
           Your reading, refined.
         </h3>
         <p className="mt-2 text-[13px] text-ink-400 leading-relaxed">
@@ -64,8 +64,8 @@ export default function CommunitySection() {
                 height: `${h}%`,
                 background:
                   i >= 10
-                    ? "linear-gradient(to top, #2aa865, #4fc184)"
-                    : "#e4ece0",
+                    ? "linear-gradient(to top, #186E28, #8CE08C)"
+                    : "#E2E3DC",
               }}
             />
           ))}

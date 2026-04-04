@@ -94,7 +94,7 @@ function LibraryBookCard({
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-brand-100 to-sage-200 p-2">
-              <span className="text-[9px] text-brand-700 font-semibold text-center leading-tight">
+              <span className="text-[9px] text-brand-600 font-semibold text-center leading-tight">
                 {book.title}
               </span>
             </div>
@@ -102,7 +102,7 @@ function LibraryBookCard({
 
           {/* Finished badge */}
           {book.status === "finished" && (
-            <div className="absolute top-2 right-2 w-[22px] h-[22px] rounded-full bg-brand-500 flex items-center justify-center shadow-sm">
+            <div className="absolute top-2 right-2 w-[22px] h-[22px] rounded-full bg-brand-600 flex items-center justify-center shadow-sm">
               <Check size={11} className="text-white" strokeWidth={3} />
             </div>
           )}
@@ -118,7 +118,7 @@ function LibraryBookCard({
           {book.status === "reading" && (
             <div className="absolute bottom-0 inset-x-0 h-[3px] bg-black/15">
               <div
-                className="h-full bg-brand-400 rounded-r-full"
+                className="h-full bg-brand-300 rounded-r-full"
                 style={{ width: `${pct}%` }}
               />
             </div>
@@ -127,10 +127,10 @@ function LibraryBookCard({
 
         {/* Meta */}
         <div className="mt-1.5 px-0.5">
-          <p className="text-[11.5px] font-semibold text-gray-900 leading-tight line-clamp-2">
+          <p className="text-[11.5px] font-semibold text-ink-700 leading-tight line-clamp-2">
             {book.title}
           </p>
-          <p className="text-[10px] text-gray-400 mt-0.5 truncate">{book.author}</p>
+          <p className="text-[10px] text-ink-400 mt-0.5 truncate">{book.author}</p>
           {book.status === "reading" && pct > 0 && (
             <span className="text-[9.5px] font-bold text-brand-600">{pct}%</span>
           )}
@@ -182,10 +182,10 @@ function ContextSheet({
             className="fixed bottom-0 inset-x-0 z-[70] bg-white rounded-t-[28px] pt-4 pb-10 max-w-lg mx-auto"
           >
             {/* Handle */}
-            <div className="w-10 h-1 rounded-full bg-gray-200 mx-auto mb-4" />
+            <div className="w-10 h-1 rounded-full bg-sage-200 mx-auto mb-4" />
 
             {/* Book info */}
-            <div className="flex items-center gap-3 px-5 pb-4 border-b border-gray-100">
+            <div className="flex items-center gap-3 px-5 pb-4 border-b border-sage-200">
               <div className="w-10 h-[60px] rounded-[10px] overflow-hidden bg-sage-100 shrink-0 shadow-sm">
                 {book.coverUrl && (
                   <Image
@@ -198,8 +198,8 @@ function ContextSheet({
                 )}
               </div>
               <div className="min-w-0">
-                <p className="text-[14px] font-bold text-gray-900 truncate">{book.title}</p>
-                <p className="text-[12px] text-gray-400 truncate">{book.author}</p>
+                <p className="text-[14px] font-bold text-ink-700 truncate">{book.title}</p>
+                <p className="text-[12px] text-ink-400 truncate">{book.author}</p>
               </div>
             </div>
 
@@ -208,32 +208,32 @@ function ContextSheet({
               {book.status === "reading" && (
                 <button
                   onClick={onContinue}
-                  className="w-full flex items-center gap-3.5 px-3.5 py-3.5 rounded-2xl hover:bg-gray-50 active:bg-gray-100 transition-colors text-left"
+                  className="w-full flex items-center gap-3.5 px-3.5 py-3.5 rounded-2xl hover:bg-sage-50 active:bg-sage-100 transition-colors text-left"
                 >
                   <Play size={18} className="text-brand-600" />
-                  <span className="text-[14px] font-medium text-gray-800">Continue Reading</span>
+                  <span className="text-[14px] font-medium text-ink-700">Continue Reading</span>
                 </button>
               )}
               {book.status !== "finished" && (
                 <button
                   onClick={onMarkFinished}
-                  className="w-full flex items-center gap-3.5 px-3.5 py-3.5 rounded-2xl hover:bg-gray-50 active:bg-gray-100 transition-colors text-left"
+                  className="w-full flex items-center gap-3.5 px-3.5 py-3.5 rounded-2xl hover:bg-sage-50 active:bg-sage-100 transition-colors text-left"
                 >
-                  <CheckCircle2 size={18} className="text-green-600" />
-                  <span className="text-[14px] font-medium text-gray-800">Mark as Finished</span>
+                  <CheckCircle2 size={18} className="text-brand-600" />
+                  <span className="text-[14px] font-medium text-ink-700">Mark as Finished</span>
                 </button>
               )}
               <button
                 onClick={onToggleFavorite}
-                className="w-full flex items-center gap-3.5 px-3.5 py-3.5 rounded-2xl hover:bg-gray-50 active:bg-gray-100 transition-colors text-left"
+                className="w-full flex items-center gap-3.5 px-3.5 py-3.5 rounded-2xl hover:bg-sage-50 active:bg-sage-100 transition-colors text-left"
               >
                 <Heart
                   size={18}
                   className={cn(
-                    isFavorite ? "text-rose-500 fill-rose-500" : "text-gray-500"
+                    isFavorite ? "text-rose-500 fill-rose-500" : "text-ink-400"
                   )}
                 />
-                <span className="text-[14px] font-medium text-gray-800">
+                <span className="text-[14px] font-medium text-ink-700">
                   {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
                 </span>
               </button>
@@ -368,7 +368,7 @@ export default function LibraryPage() {
         subtitle={`${books.length} books`}
         right={
           <Link href="/book/scan">
-            <button className="w-9 h-9 bg-white rounded-2xl flex items-center justify-center text-gray-500 shadow-card active:scale-95 transition-transform">
+            <button className="w-9 h-9 bg-white rounded-2xl flex items-center justify-center text-ink-500 shadow-card active:scale-95 transition-transform">
               <Search size={18} strokeWidth={2} />
             </button>
           </Link>
@@ -377,18 +377,18 @@ export default function LibraryPage() {
 
       {/* ── Search ───────────────────────────────────────────────── */}
       <div className="px-5 pt-3 pb-1">
-        <div className="flex items-center gap-3 bg-[#edf3eb] rounded-[18px] px-4 py-3">
-          <Search size={15} className="text-gray-400 shrink-0" />
+        <div className="flex items-center gap-3 bg-sage-100 rounded-[18px] px-4 py-3">
+          <Search size={15} className="text-ink-400 shrink-0" />
           <input
             type="text"
             placeholder="Search your library..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="flex-1 text-[13px] outline-none bg-transparent placeholder:text-gray-400 text-gray-700"
+            className="flex-1 text-[13px] outline-none bg-transparent placeholder:text-ink-400 text-ink-700"
           />
           {searchQuery && (
             <button onClick={() => setSearchQuery("")}>
-              <X size={14} className="text-gray-400" />
+              <X size={14} className="text-ink-400" />
             </button>
           )}
         </div>
@@ -396,7 +396,7 @@ export default function LibraryPage() {
 
       {/* ── Curated Collections ──────────────────────────────────── */}
       <div className="px-5 pt-5 pb-1">
-        <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-gray-400 mb-4">
+        <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-ink-400 mb-4">
           Curated Collections
         </p>
         <div
@@ -419,7 +419,7 @@ export default function LibraryPage() {
                     "w-[56px] h-[56px] rounded-full flex items-center justify-center transition-all duration-200",
                     active
                       ? "bg-forest-900 shadow-[0_4px_18px_rgba(15,35,18,0.28)]"
-                      : "bg-[#e3ede1]"
+                      : "bg-brand-50"
                   )}
                 >
                   <Icon
@@ -431,20 +431,20 @@ export default function LibraryPage() {
                         ? id === "favorites"
                           ? "text-rose-400 fill-rose-400"
                           : "text-white"
-                        : "text-gray-500"
+                        : "text-ink-500"
                     )}
                   />
                 </motion.div>
                 <span
                   className={cn(
                     "text-[10.5px] font-medium text-center leading-tight",
-                    active ? "text-forest-900 font-bold" : "text-gray-500"
+                    active ? "text-forest-900 font-bold" : "text-ink-500"
                   )}
                 >
                   {label}
                 </span>
                 {count > 0 && (
-                  <span className="text-[9.5px] text-gray-400 -mt-1">({count})</span>
+                  <span className="text-[9.5px] text-ink-400 -mt-1">({count})</span>
                 )}
               </button>
             );
@@ -456,7 +456,7 @@ export default function LibraryPage() {
       {currentlyReading.length > 0 && (
         <div className="pt-5">
           <div className="flex items-center justify-between px-5 mb-3">
-            <h3 className="text-[14px] font-bold text-gray-900">Currently Reading</h3>
+            <h3 className="text-[14px] font-bold text-ink-700">Currently Reading</h3>
             <span className="text-[11px] font-semibold text-brand-600">
               {currentlyReading.length} in progress
             </span>
@@ -496,15 +496,15 @@ export default function LibraryPage() {
                   </div>
                   <div className="absolute bottom-0 inset-x-0 h-[3px] bg-white/20">
                     <div
-                      className="h-full bg-brand-400"
-                      style={{ width: `${book.progress?.percentage ?? 0}%` }}
+              className="h-full bg-brand-300"
+              style={{ width: `${book.progress?.percentage ?? 0}%` }}
                     />
                   </div>
                 </div>
-                <p className="text-[11px] font-semibold text-gray-900 mt-1.5 leading-tight line-clamp-2">
+                <p className="text-[11px] font-semibold text-ink-700 mt-1.5 leading-tight line-clamp-2">
                   {book.title}
                 </p>
-                <p className="text-[9.5px] text-gray-400 mt-0.5 truncate">{book.author}</p>
+                <p className="text-[9.5px] text-ink-400 mt-0.5 truncate">{book.author}</p>
               </Link>
             ))}
             <div className="shrink-0 w-1" />
@@ -515,7 +515,7 @@ export default function LibraryPage() {
       {/* ── Library header + sort ─────────────────────────────────── */}
       <div className="flex items-end justify-between px-5 pt-6 pb-2">
         <div>
-          <h2 className="text-[22px] font-bold text-gray-900 leading-none">Library</h2>
+          <h2 className="text-[22px] font-bold text-ink-700 leading-none">Library</h2>
           <p className="text-[11px] font-bold text-brand-600 tracking-wide mt-0.5">
             ALL BOOKS ({filtered.length})
           </p>
@@ -525,7 +525,7 @@ export default function LibraryPage() {
         <div className="relative">
           <button
             onClick={() => setSortOpen((o) => !o)}
-            className="flex items-center gap-1.5 bg-white rounded-xl px-3 py-2 shadow-card text-[12px] font-medium text-gray-600 active:scale-95 transition-transform"
+            className="flex items-center gap-1.5 bg-white rounded-xl px-3 py-2 shadow-card text-[12px] font-medium text-ink-600 active:scale-95 transition-transform"
           >
             {sortLabel}
             <ChevronDown
@@ -563,8 +563,8 @@ export default function LibraryPage() {
                       className={cn(
                         "w-full text-left px-3.5 py-2.5 rounded-xl text-[13px] font-medium transition-colors flex items-center justify-between",
                         sortBy === value
-                          ? "bg-brand-50 text-brand-700"
-                          : "text-gray-700 hover:bg-gray-50"
+                          ? "bg-brand-50 text-brand-600"
+                          : "text-ink-700 hover:bg-sage-50"
                       )}
                     >
                       {label}
@@ -582,8 +582,8 @@ export default function LibraryPage() {
 
       {/* ── Scan hint ────────────────────────────────────────────── */}
       <div className="px-5 pb-3 flex items-center gap-1.5">
-        <ScanLine size={12} className="text-brand-500" />
-        <p className="text-[11.5px] text-gray-400">Scan a book to add it instantly</p>
+        <ScanLine size={12} className="text-brand-600" />
+        <p className="text-[11.5px] text-ink-400">Scan a book to add it instantly</p>
       </div>
 
       {/* ── Grid / Empty state ───────────────────────────────────── */}
@@ -593,8 +593,8 @@ export default function LibraryPage() {
             <div className="w-16 h-16 rounded-3xl bg-sage-100 flex items-center justify-center mb-4 shadow-sm">
               <BookOpen size={26} className="text-sage-500" />
             </div>
-            <p className="text-[15px] font-bold text-gray-800">No books here yet</p>
-            <p className="text-[13px] text-gray-400 mt-1.5 max-w-[220px] leading-relaxed">
+            <p className="text-[15px] font-bold text-ink-700">No books here yet</p>
+            <p className="text-[13px] text-ink-400 mt-1.5 max-w-[220px] leading-relaxed">
               {activeCollection !== "all"
                 ? "Add books from recommendations or scan a new one"
                 : searchQuery

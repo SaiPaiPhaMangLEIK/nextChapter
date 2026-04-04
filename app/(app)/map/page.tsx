@@ -47,8 +47,8 @@ export default function MapPage() {
         title="Reading Map"
         subtitle="Your book connections"
         right={
-          <button className="w-9 h-9 bg-white rounded-2xl shadow-card flex items-center justify-center">
-            <Filter size={16} className="text-gray-600" />
+            <button className="w-9 h-9 bg-white rounded-2xl shadow-card flex items-center justify-center">
+            <Filter size={16} className="text-ink-600" />
           </button>
         }
       />
@@ -57,20 +57,20 @@ export default function MapPage() {
       <div className="px-5 pt-2 pb-3">
         <div className="flex gap-2 overflow-x-auto scrollbar-hide">
           {[
-            { color: "bg-brand-500", label: "Finished" },
+            { color: "bg-brand-600", label: "Finished" },
             { color: "bg-amber-400", label: "Reading" },
-            { color: "bg-gray-300", label: "Want to Read" },
+            { color: "bg-sage-300", label: "Want to Read" },
           ].map(({ color, label }) => (
             <div key={label} className="flex items-center gap-1.5 shrink-0">
               <span className={`w-2.5 h-2.5 rounded-full ${color}`} />
-              <span className="text-xs text-gray-500">{label}</span>
+              <span className="text-xs text-ink-500">{label}</span>
             </div>
           ))}
         </div>
       </div>
 
       {/* ─── Map canvas ─────────────────────────────────────────── */}
-      <div className="mx-5 rounded-3xl overflow-hidden bg-gradient-to-br from-sage-50 to-brand-50 border border-brand-100 shadow-card">
+      <div className="mx-5 rounded-3xl overflow-hidden bg-gradient-to-br from-sage-50 to-brand-50 border border-sage-200 shadow-card">
         <div
           className="relative overflow-auto scrollbar-hide"
           style={{ height: "460px" }}
@@ -101,7 +101,7 @@ export default function MapPage() {
                     y1={fromPos.y}
                     x2={toPos.x}
                     y2={toPos.y}
-                    stroke="#86d9ad"
+                    stroke="#8CE08C"
                     strokeWidth={1.5}
                     strokeDasharray="4 3"
                     opacity={0.6}
@@ -119,10 +119,10 @@ export default function MapPage() {
 
               const ringColor =
                 book.status === "finished"
-                  ? "ring-brand-500"
+                  ? "ring-brand-600"
                   : book.status === "reading"
                   ? "ring-amber-400"
-                  : "ring-gray-300";
+                  : "ring-sage-300";
 
               return (
                 <button
@@ -151,7 +151,7 @@ export default function MapPage() {
                     />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-brand-100 to-sage-100 flex items-center justify-center p-1">
-                      <span className="text-[8px] text-brand-700 font-bold text-center leading-tight">
+                      <span className="text-[8px] text-brand-600 font-bold text-center leading-tight">
                         {book.title.slice(0, 8)}
                       </span>
                     </div>
@@ -163,19 +163,19 @@ export default function MapPage() {
         </div>
 
         {/* Zoom controls */}
-        <div className="flex items-center justify-end gap-2 px-4 py-3 border-t border-brand-100/50">
+        <div className="flex items-center justify-end gap-2 px-4 py-3 border-t border-sage-200/50">
           <button
             onClick={() => setZoom((z) => Math.max(0.6, z - 0.2))}
             className="w-8 h-8 rounded-xl bg-white shadow-card flex items-center justify-center"
           >
-            <ZoomOut size={14} className="text-gray-500" />
+            <ZoomOut size={14} className="text-ink-500" />
           </button>
-          <span className="text-xs text-gray-400 w-10 text-center">{Math.round(zoom * 100)}%</span>
+          <span className="text-xs text-ink-400 w-10 text-center">{Math.round(zoom * 100)}%</span>
           <button
             onClick={() => setZoom((z) => Math.min(1.8, z + 0.2))}
             className="w-8 h-8 rounded-xl bg-white shadow-card flex items-center justify-center"
           >
-            <ZoomIn size={14} className="text-gray-500" />
+            <ZoomIn size={14} className="text-ink-500" />
           </button>
         </div>
       </div>
@@ -184,7 +184,7 @@ export default function MapPage() {
       {selectedBook && (
         <div className="mx-5 mt-4 bg-white rounded-2xl p-4 shadow-card animate-slide-up">
           <div className="flex items-center gap-3">
-            <div className="w-[46px] h-[68px] rounded-xl overflow-hidden bg-gray-100 shadow-sm shrink-0">
+            <div className="w-[46px] h-[68px] rounded-xl overflow-hidden bg-sage-100 shadow-sm shrink-0">
               {selectedBook.coverUrl ? (
                 <Image
                   src={selectedBook.coverUrl}
@@ -196,8 +196,8 @@ export default function MapPage() {
               ) : null}
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-[14px] font-semibold text-gray-900 truncate">{selectedBook.title}</p>
-              <p className="text-xs text-gray-400 mt-0.5">{selectedBook.author}</p>
+              <p className="text-[14px] font-semibold text-ink-700 truncate">{selectedBook.title}</p>
+              <p className="text-xs text-ink-400 mt-0.5">{selectedBook.author}</p>
               <Badge
                 variant={selectedBook.status === "reading" ? "amber" : "green"}
                 size="sm"
@@ -221,12 +221,12 @@ export default function MapPage() {
 
       {/* ─── AI insight ─────────────────────────────────────────── */}
       <div className="px-5 pt-4">
-        <div className="bg-gradient-to-r from-brand-50 to-sage-50 rounded-2xl p-4 border border-brand-100">
+        <div className="bg-gradient-to-r from-brand-50 to-sage-50 rounded-2xl p-4 border border-sage-200">
           <div className="flex items-center gap-2 mb-2">
-            <Sparkles size={14} className="text-brand-500" />
-            <p className="text-[13px] font-semibold text-gray-800">AI Insight</p>
+            <Sparkles size={14} className="text-brand-600" />
+            <p className="text-[13px] font-semibold text-ink-700">AI Insight</p>
           </div>
-          <p className="text-xs text-gray-600 leading-relaxed">
+          <p className="text-xs text-ink-500 leading-relaxed">
             You have a strong pattern in <strong>Psychology & Self-Help</strong>. Your reading map
             shows you tend to explore how habits and decisions intersect. Try branching into
             Philosophy or Neuroscience next.

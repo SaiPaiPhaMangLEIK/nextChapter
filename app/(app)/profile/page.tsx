@@ -34,7 +34,7 @@ export default function ProfilePage() {
   return (
     <div className="mobile-page bg-cream animate-fade-in">
       {/* ─── Header banner ──────────────────────────────────────── */}
-      <div className="relative px-5 pt-14 pb-6 bg-gradient-to-b from-sage-600 to-brand-600 text-white overflow-hidden">
+      <div className="relative px-5 pt-14 pb-6 bg-gradient-to-b from-brand-700 to-brand-600 text-white overflow-hidden">
         <div className="absolute -top-10 -right-10 w-44 h-44 rounded-full bg-white/10" />
 
         <div className="flex items-center justify-between">
@@ -60,11 +60,11 @@ export default function ProfilePage() {
       <div className="px-5 pt-5">
         <div className="bg-white rounded-2xl p-4 shadow-card">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-[13px] font-semibold text-gray-900">2025 Reading Goal</h3>
+            <h3 className="text-[13px] font-semibold text-ink-700">2025 Reading Goal</h3>
             <Badge variant="green">{user.readingGoal!.booksCompleted} / {user.readingGoal!.booksPerYear}</Badge>
           </div>
           <ProgressBar value={goalPercent} size="md" />
-          <p className="text-xs text-gray-400 mt-2">
+          <p className="text-xs text-ink-400 mt-2">
             {user.readingGoal!.booksPerYear - user.readingGoal!.booksCompleted} books to go — you&apos;re {goalPercent}% there!
           </p>
         </div>
@@ -78,7 +78,7 @@ export default function ProfilePage() {
               icon: BookOpen,
               label: "Books Read",
               value: user.stats.totalBooksRead,
-              color: "text-brand-500",
+              color: "text-brand-600",
               bg: "bg-brand-50",
             },
             {
@@ -107,8 +107,8 @@ export default function ProfilePage() {
               <div className={`w-9 h-9 rounded-xl ${bg} flex items-center justify-center mb-2`}>
                 <Icon size={18} className={color} />
               </div>
-              <p className="text-[22px] font-bold text-gray-900">{value}</p>
-              <p className="text-xs text-gray-400 mt-0.5">{label}</p>
+              <p className="text-[22px] font-bold text-ink-700">{value}</p>
+              <p className="text-xs text-ink-400 mt-0.5">{label}</p>
             </div>
           ))}
         </div>
@@ -117,26 +117,26 @@ export default function ProfilePage() {
       {/* ─── Favorite genre + reading pace ──────────────────────── */}
       <div className="px-5 pt-4">
         <div className="bg-white rounded-2xl p-4 shadow-card space-y-3">
-          <h3 className="text-[13px] font-semibold text-gray-900">Reading Habits</h3>
+          <h3 className="text-[13px] font-semibold text-ink-700">Reading Habits</h3>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-600">Favorite Genre</span>
+            <span className="text-sm text-ink-500">Favorite Genre</span>
             <Badge variant="green">{user.stats.favoriteGenre}</Badge>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-600">Books this Month</span>
-            <span className="text-sm font-semibold text-gray-900">{user.stats.booksThisMonth}</span>
+            <span className="text-sm text-ink-500">Books this Month</span>
+            <span className="text-sm font-semibold text-ink-700">{user.stats.booksThisMonth}</span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-600">Total Pages Read</span>
-            <span className="text-sm font-semibold text-gray-900">
+            <span className="text-sm text-ink-500">Total Pages Read</span>
+            <span className="text-sm font-semibold text-ink-700">
               {user.stats.totalPagesRead.toLocaleString()}
             </span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-600">Current Streak</span>
+            <span className="text-sm text-ink-500">Current Streak</span>
             <div className="flex items-center gap-1.5">
               <Flame size={14} className="text-amber-500" />
-              <span className="text-sm font-semibold text-gray-900">
+              <span className="text-sm font-semibold text-ink-700">
                 {pluralize(user.stats.currentStreak, "day")}
               </span>
             </div>
@@ -146,17 +146,17 @@ export default function ProfilePage() {
 
       {/* ─── Settings list ──────────────────────────────────────── */}
       <div className="px-5 pt-4">
-        <div className="bg-white rounded-2xl shadow-card overflow-hidden divide-y divide-gray-50">
+        <div className="bg-white rounded-2xl shadow-card overflow-hidden divide-y divide-sage-100">
           {SETTINGS_ITEMS.map(({ label, icon: Icon }) => (
             <button
               key={label}
-              className="w-full flex items-center gap-3 px-4 py-3.5 text-left hover:bg-gray-50 active:bg-gray-100 transition-colors"
+              className="w-full flex items-center gap-3 px-4 py-3.5 text-left hover:bg-sage-50 active:bg-sage-100 transition-colors"
             >
-              <div className="w-8 h-8 rounded-xl bg-gray-100 flex items-center justify-center">
-                <Icon size={15} className="text-gray-600" />
+              <div className="w-8 h-8 rounded-xl bg-sage-100 flex items-center justify-center">
+                <Icon size={15} className="text-ink-600" />
               </div>
-              <span className="flex-1 text-sm text-gray-800 font-medium">{label}</span>
-              <ChevronRight size={15} className="text-gray-300" />
+              <span className="flex-1 text-sm text-ink-700 font-medium">{label}</span>
+              <ChevronRight size={15} className="text-ink-300" />
             </button>
           ))}
         </div>
@@ -175,8 +175,8 @@ export default function ProfilePage() {
               }}
             />
             <div className="flex-1">
-              <p className="text-sm font-semibold text-gray-900">Account</p>
-              <p className="text-xs text-gray-400">Manage profile, security & sign out</p>
+              <p className="text-sm font-semibold text-ink-700">Account</p>
+              <p className="text-xs text-ink-400">Manage profile, security & sign out</p>
             </div>
           </div>
         </Show>

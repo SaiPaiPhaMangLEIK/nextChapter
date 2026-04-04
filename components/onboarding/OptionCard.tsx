@@ -33,11 +33,11 @@ export default function OptionCard({
         "w-full text-left rounded-[20px] bg-white transition-all duration-200 relative overflow-hidden",
         // border
         selected
-          ? "border-2 border-brand-500"
-          : "border border-[#e2ebe0]",
+          ? "border-2 border-brand-600"
+          : "border border-sage-200",
         // shadow
         selected
-          ? "shadow-[0_2px_20px_rgba(42,168,101,0.14)]"
+          ? "shadow-[0_2px_20px_rgba(24,110,40,0.14)]"
           : "shadow-[0_1px_8px_rgba(0,0,0,0.05)]",
         layout === "vertical" ? "p-5" : "p-4 flex items-center gap-4"
       )}
@@ -49,7 +49,7 @@ export default function OptionCard({
           layout === "vertical"
             ? "w-11 h-11 mb-4"
             : "w-12 h-12",
-          selected ? "bg-brand-100" : "bg-[#e8f2e5]"
+          selected ? "bg-brand-100" : "bg-brand-50"
         )}
       >
         <span
@@ -68,7 +68,7 @@ export default function OptionCard({
           className={cn(
             "font-bold leading-tight transition-colors",
             layout === "vertical" ? "text-[17px]" : "text-[16px]",
-            selected ? "text-brand-800" : "text-ink-900"
+            selected ? "text-brand-700" : "text-ink-700"
           )}
         >
           {title}
@@ -90,7 +90,7 @@ export default function OptionCard({
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: "spring", stiffness: 500, damping: 22 }}
-          className="absolute top-3.5 right-3.5 w-5 h-5 rounded-full bg-brand-500 flex items-center justify-center"
+          className="absolute top-3.5 right-3.5 w-5 h-5 rounded-full bg-brand-600 flex items-center justify-center"
         >
           <Check size={11} className="text-white" strokeWidth={3} />
         </motion.div>

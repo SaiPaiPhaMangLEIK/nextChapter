@@ -66,19 +66,19 @@ export default function AskThisBook({ book, isPremium = false, className }: AskT
     return (
       <div
         className={cn(
-          "bg-gradient-to-br from-brand-50 to-sage-50 rounded-2xl p-5 text-center border border-brand-100",
+          "bg-gradient-to-br from-brand-50 to-sage-50 rounded-2xl p-5 text-center border border-brand-50",
           className
         )}
       >
         <div className="w-12 h-12 rounded-2xl bg-brand-100 flex items-center justify-center mx-auto mb-3">
           <Lock size={20} className="text-brand-600" />
         </div>
-        <h3 className="text-[15px] font-semibold text-gray-900">Ask This Book</h3>
-        <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+        <h3 className="text-[15px] font-semibold text-ink-700">Ask This Book</h3>
+        <p className="text-xs text-ink-500 mt-1 leading-relaxed">
           Chat with an AI that has read this book. Get insights, summaries, and next-read
           recommendations.
         </p>
-        <button className="mt-4 w-full py-3 rounded-2xl bg-brand-500 text-white text-sm font-semibold shadow-float">
+        <button className="mt-4 w-full py-3 rounded-2xl bg-brand-600 text-white text-sm font-semibold shadow-float">
           Upgrade to Premium
         </button>
       </div>
@@ -88,13 +88,13 @@ export default function AskThisBook({ book, isPremium = false, className }: AskT
   return (
     <div className={cn("bg-white rounded-2xl shadow-card overflow-hidden flex flex-col", className)}>
       {/* Header */}
-      <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-100 bg-gradient-to-r from-brand-50 to-transparent">
-        <div className="w-7 h-7 rounded-xl bg-brand-500 flex items-center justify-center">
+      <div className="flex items-center gap-2 px-4 py-3 border-b border-sage-200 bg-gradient-to-r from-brand-50 to-transparent">
+        <div className="w-7 h-7 rounded-xl bg-brand-600 flex items-center justify-center">
           <Sparkles size={14} className="text-white" />
         </div>
         <div>
-          <h3 className="text-[13px] font-semibold text-gray-900">Ask This Book</h3>
-          <p className="text-[10px] text-gray-400">AI-powered reading companion</p>
+          <h3 className="text-[13px] font-semibold text-ink-700">Ask This Book</h3>
+          <p className="text-[10px] text-ink-400">AI-powered reading companion</p>
         </div>
       </div>
 
@@ -112,8 +112,8 @@ export default function AskThisBook({ book, isPremium = false, className }: AskT
               className={cn(
                 "max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed",
                 msg.role === "user"
-                  ? "bg-brand-500 text-white rounded-br-sm"
-                  : "bg-gray-100 text-gray-800 rounded-bl-sm"
+                  ? "bg-brand-600 text-white rounded-br-sm"
+                  : "bg-sage-100 text-ink-700 rounded-bl-sm"
               )}
             >
               {msg.content}
@@ -122,11 +122,11 @@ export default function AskThisBook({ book, isPremium = false, className }: AskT
         ))}
         {loading && (
           <div className="flex justify-start">
-            <div className="bg-gray-100 rounded-2xl rounded-bl-sm px-4 py-3 flex gap-1">
+            <div className="bg-sage-100 rounded-2xl rounded-bl-sm px-4 py-3 flex gap-1">
               {[0, 0.15, 0.3].map((delay, i) => (
                 <span
                   key={i}
-                  className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-bounce"
+                  className="w-1.5 h-1.5 rounded-full bg-ink-400 animate-bounce"
                   style={{ animationDelay: `${delay}s` }}
                 />
               ))}
@@ -143,7 +143,7 @@ export default function AskThisBook({ book, isPremium = false, className }: AskT
             <button
               key={prompt}
               onClick={() => handleSend(prompt)}
-              className="shrink-0 text-xs px-3 py-1.5 rounded-xl bg-brand-50 text-brand-700 font-medium border border-brand-100 active:bg-brand-100"
+              className="shrink-0 text-xs px-3 py-1.5 rounded-xl bg-brand-50 text-brand-600 font-medium border border-brand-50 active:bg-brand-100"
             >
               {prompt}
             </button>
@@ -152,19 +152,19 @@ export default function AskThisBook({ book, isPremium = false, className }: AskT
       )}
 
       {/* Input */}
-      <div className="flex items-center gap-2 p-3 border-t border-gray-100">
+      <div className="flex items-center gap-2 p-3 border-t border-sage-200">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSend()}
           placeholder="Ask something..."
-          className="flex-1 text-sm bg-gray-100 rounded-2xl px-4 py-2.5 outline-none placeholder:text-gray-400 focus:ring-2 ring-brand-200"
+          className="flex-1 text-sm bg-sage-100 rounded-2xl px-4 py-2.5 outline-none placeholder:text-ink-400 focus:ring-2 ring-brand-300"
         />
         <button
           onClick={() => handleSend()}
           disabled={!input.trim() || loading}
-          className="w-9 h-9 rounded-2xl bg-brand-500 text-white flex items-center justify-center disabled:opacity-40 active:scale-95 transition-transform"
+          className="w-9 h-9 rounded-2xl bg-brand-600 text-white flex items-center justify-center disabled:opacity-40 active:scale-95 transition-transform"
         >
           <Send size={15} />
         </button>

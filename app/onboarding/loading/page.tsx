@@ -94,7 +94,7 @@ export default function LoadingPage() {
       className="min-h-screen flex flex-col overflow-x-hidden"
       style={{
         background:
-          "linear-gradient(180deg, #e6f0e3 0%, #f0f5ee 45%, #f5f2eb 100%)",
+          "linear-gradient(180deg, #DCF0DC 0%, #F1F5EB 45%, #F8FAF3 100%)",
       }}
     >
       {/* ── Custom header ──────────────────────────────────────────────── */}
@@ -113,7 +113,7 @@ export default function LoadingPage() {
         {/* Compact progress bar */}
         <div className="w-[72px] h-[3px] bg-sage-200 rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-brand-500 rounded-full"
+            className="h-full bg-brand-600 rounded-full"
             initial={{ width: 0 }}
             animate={{ width: `${pct}%` }}
             transition={{ duration: 1, delay: 0.3, ease }}
@@ -131,14 +131,14 @@ export default function LoadingPage() {
         >
           <motion.line
             x1="160" y1="55" x2="110" y2="130"
-            stroke="#2aa865" strokeWidth="1.2" strokeDasharray="5 4"
+            stroke="#186E28" strokeWidth="1.2" strokeDasharray="5 4"
             initial={{ pathLength: 0, opacity: 0 }}
             animate={{ pathLength: 1, opacity: 0.22 }}
             transition={{ duration: 1.2, delay: 0.6, ease }}
           />
           <motion.line
             x1="160" y1="55" x2="215" y2="125"
-            stroke="#2aa865" strokeWidth="1.2" strokeDasharray="5 4"
+            stroke="#186E28" strokeWidth="1.2" strokeDasharray="5 4"
             initial={{ pathLength: 0, opacity: 0 }}
             animate={{ pathLength: 1, opacity: 0.22 }}
             transition={{ duration: 1.2, delay: 0.8, ease }}
@@ -151,7 +151,7 @@ export default function LoadingPage() {
             <motion.circle
               key={i}
               cx={cx} cy={cy} r="3"
-              fill="#2aa865"
+              fill="#186E28"
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 0.35 }}
               transition={{ duration: 0.4, delay: 0.5 + i * 0.15 }}
@@ -223,7 +223,7 @@ export default function LoadingPage() {
                 delay: i * 0.27,
                 ease: "easeInOut",
               }}
-              className="w-[7px] h-[7px] rounded-full bg-brand-500"
+              className="w-[7px] h-[7px] rounded-full bg-brand-600"
             />
           ))}
         </div>

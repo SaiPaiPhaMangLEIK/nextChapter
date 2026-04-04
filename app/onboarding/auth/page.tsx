@@ -196,7 +196,7 @@ export default function AuthPage() {
         </span>
         <div className="w-[56px] h-[3px] bg-sage-200 rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-brand-500 rounded-full"
+            className="h-full bg-brand-600 rounded-full"
             initial={{ width: 0 }}
             animate={{ width: `${pct}%` }}
             transition={{ duration: 1, delay: 0.3, ease }}
@@ -252,7 +252,7 @@ export default function AuthPage() {
             disabled={busy}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 380, damping: 26 }}
-            className="flex items-center justify-center gap-2.5 w-full py-[15px] rounded-full bg-white text-ink-800 font-semibold text-[15px] border border-[#e2ebe0] shadow-[0_1px_8px_rgba(0,0,0,0.06)] hover:bg-sage-50 transition-colors disabled:opacity-60"
+            className="flex items-center justify-center gap-2.5 w-full py-[15px] rounded-full bg-white text-ink-800 font-semibold text-[15px] border border-sage-200 shadow-[0_1px_8px_rgba(0,0,0,0.06)] hover:bg-sage-50 transition-colors disabled:opacity-60"
           >
             {oauthLoading === "google" ? (
               <span className="w-4 h-4 rounded-full border-2 border-ink-200 border-t-ink-500 animate-spin" />
@@ -305,7 +305,7 @@ export default function AuthPage() {
                     placeholder="Eleanor Vance"
                     required
                     autoComplete="name"
-                    className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#e2ebe0] text-[14px] text-ink-800 placeholder:text-ink-200 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-white border border-sage-200 text-[14px] text-ink-800 placeholder:text-ink-200 focus:outline-none focus:border-brand-300 focus:ring-2 focus:ring-brand-100 transition-all"
                   />
                 </div>
 
@@ -321,7 +321,7 @@ export default function AuthPage() {
                     placeholder="eleanor@example.com"
                     required
                     autoComplete="email"
-                    className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#e2ebe0] text-[14px] text-ink-800 placeholder:text-ink-200 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-white border border-sage-200 text-[14px] text-ink-800 placeholder:text-ink-200 focus:outline-none focus:border-brand-300 focus:ring-2 focus:ring-brand-100 transition-all"
                   />
                 </div>
 
@@ -338,7 +338,7 @@ export default function AuthPage() {
                       placeholder="••••••••"
                       required
                       autoComplete="new-password"
-                      className="w-full px-4 py-3.5 pr-12 rounded-2xl bg-white border border-[#e2ebe0] text-[14px] text-ink-800 placeholder:text-ink-300 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 transition-all"
+                      className="w-full px-4 py-3.5 pr-12 rounded-2xl bg-white border border-sage-200 text-[14px] text-ink-800 placeholder:text-ink-300 focus:outline-none focus:border-brand-300 focus:ring-2 focus:ring-brand-100 transition-all"
                     />
                     <button
                       type="button"
@@ -373,7 +373,7 @@ export default function AuthPage() {
                                     ? "bg-red-400"
                                     : strength === "ok"
                                     ? "bg-amber-400"
-                                    : "bg-brand-500"
+                                    : "bg-brand-600"
                                   : "bg-sage-100"
                               )}
                             />
@@ -476,7 +476,7 @@ export default function AuthPage() {
                     maxLength={6}
                     required
                     autoFocus
-                    className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#e2ebe0] text-[22px] text-center font-bold tracking-[0.35em] text-ink-800 placeholder:text-ink-200 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-white border border-sage-200 text-[22px] text-center font-bold tracking-[0.35em] text-ink-800 placeholder:text-ink-200 focus:outline-none focus:border-brand-300 focus:ring-2 focus:ring-brand-100 transition-all"
                   />
                 </div>
 

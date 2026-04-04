@@ -31,7 +31,7 @@ export default function BookCard({
             className
           )}
         >
-          <div className="shrink-0 w-[52px] h-[78px] rounded-xl overflow-hidden bg-gray-100 shadow-sm">
+          <div className="shrink-0 w-[52px] h-[78px] rounded-xl overflow-hidden bg-sage-100 shadow-sm">
             {book.coverUrl ? (
               <Image
                 src={book.coverUrl}
@@ -52,15 +52,15 @@ export default function BookCard({
           <div className="flex-1 min-w-0">
             <div className="flex items-start justify-between gap-2">
               <div className="min-w-0">
-                <h3 className="text-[14px] font-semibold text-gray-900 leading-snug truncate">
+                <h3 className="text-[14px] font-semibold text-ink-700 leading-snug truncate">
                   {book.title}
                 </h3>
-                <p className="text-xs text-gray-400 mt-0.5 truncate">{book.author}</p>
+                <p className="text-xs text-ink-400 mt-0.5 truncate">{book.author}</p>
               </div>
               {book.rating && (
                 <div className="flex items-center gap-0.5 shrink-0">
                   <Star size={11} className="text-amber-400 fill-amber-400" />
-                  <span className="text-xs text-gray-500">{book.rating}</span>
+                  <span className="text-xs text-ink-500">{book.rating}</span>
                 </div>
               )}
             </div>
@@ -69,7 +69,7 @@ export default function BookCard({
               {showProgress && book.progress && book.status === "reading" && (
                 <div>
                   <ProgressBar value={book.progress.percentage} size="xs" />
-                  <p className="text-[10px] text-gray-400 mt-0.5">
+                  <p className="text-[10px] text-ink-400 mt-0.5">
                     p. {book.progress.currentPage} / {book.progress.totalPages}
                   </p>
                 </div>
@@ -93,7 +93,7 @@ export default function BookCard({
     return (
       <Link href={`/book/${book.id}`} className="block shrink-0">
         <div className={cn("w-[110px]", className)}>
-          <div className="w-[110px] h-[165px] rounded-xl overflow-hidden bg-gray-100 shadow-md active:scale-[0.97] transition-transform">
+          <div className="w-[110px] h-[165px] rounded-xl overflow-hidden bg-sage-100 shadow-md active:scale-[0.97] transition-transform">
             {book.coverUrl ? (
               <Image
                 src={book.coverUrl}
@@ -111,10 +111,10 @@ export default function BookCard({
             )}
           </div>
           <div className="mt-2 px-0.5">
-            <p className="text-[12px] font-semibold text-gray-900 leading-tight line-clamp-2">
+            <p className="text-[12px] font-semibold text-ink-700 leading-tight line-clamp-2">
               {book.title}
             </p>
-            <p className="text-[10px] text-gray-400 mt-0.5 truncate">{book.author}</p>
+            <p className="text-[10px] text-ink-400 mt-0.5 truncate">{book.author}</p>
             {showProgress && book.progress && book.status === "reading" && (
               <ProgressBar value={book.progress.percentage} size="xs" className="mt-1.5" />
             )}
@@ -133,7 +133,7 @@ export default function BookCard({
           className
         )}
       >
-        <div className="relative w-full h-48 bg-gray-100">
+        <div className="relative w-full h-48 bg-sage-100">
           {book.coverUrl ? (
             <Image
               src={book.coverUrl}
@@ -155,10 +155,10 @@ export default function BookCard({
           </div>
         </div>
         <div className="p-3">
-          <h3 className="text-[13px] font-semibold text-gray-900 leading-snug line-clamp-2">
+          <h3 className="text-[13px] font-semibold text-ink-700 leading-snug line-clamp-2">
             {book.title}
           </h3>
-          <p className="text-[11px] text-gray-400 mt-0.5 truncate">{book.author}</p>
+          <p className="text-[11px] text-ink-400 mt-0.5 truncate">{book.author}</p>
           {showProgress && book.progress && (
             <ProgressBar value={book.progress.percentage} size="xs" className="mt-2" />
           )}

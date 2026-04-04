@@ -127,7 +127,7 @@ export default function SignInPage() {
       className="min-h-screen pb-12"
       style={{
         background:
-          "linear-gradient(180deg, #e6f0e3 0%, #f0f5ee 45%, #f5f2eb 100%)",
+          "linear-gradient(180deg, #DCF0DC 0%, #F1F5EB 45%, #F8FAF3 100%)",
       }}
     >
       {/* ── Header ───────────────────────────────────────────────── */}
@@ -153,7 +153,7 @@ export default function SignInPage() {
           transition={{ duration: 0.55, delay: 0.05, ease }}
           className="mb-8"
         >
-          <h1 className="text-[34px] font-bold text-gray-900 leading-[1.08] tracking-tight">
+          <h1 className="text-[34px] font-bold text-ink-700 leading-[1.08] tracking-tight">
             Welcome back.
           </h1>
           <p className="text-[14px] text-ink-400 leading-relaxed mt-2.5">
@@ -183,7 +183,7 @@ export default function SignInPage() {
               autoComplete="email"
               autoCapitalize="none"
               disabled={busy}
-              className="w-full bg-[#e4ede2] rounded-2xl px-4 py-[15px] text-[15px] text-gray-800 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-brand-400/60 transition-all disabled:opacity-60"
+              className="w-full bg-sage-100 rounded-2xl px-4 py-[15px] text-[15px] text-ink-700 placeholder:text-ink-400 outline-none focus:ring-2 focus:ring-brand-300/60 transition-all disabled:opacity-60"
             />
           </div>
 
@@ -200,12 +200,12 @@ export default function SignInPage() {
                 placeholder="••••••••"
                 autoComplete="current-password"
                 disabled={busy}
-                className="w-full bg-[#e4ede2] rounded-2xl px-4 py-[15px] pr-12 text-[15px] text-gray-800 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-brand-400/60 transition-all disabled:opacity-60"
+                className="w-full bg-sage-100 rounded-2xl px-4 py-[15px] pr-12 text-[15px] text-ink-700 placeholder:text-ink-400 outline-none focus:ring-2 focus:ring-brand-300/60 transition-all disabled:opacity-60"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword((v) => !v)}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-ink-400 hover:text-ink-500 transition-colors"
                 aria-label={showPassword ? "Hide password" : "Show password"}
               >
                 {showPassword ? (
@@ -250,7 +250,7 @@ export default function SignInPage() {
             className={cn(
               "w-full py-[17px] rounded-full text-[16px] font-bold text-white mt-1 transition-all duration-200",
               canSubmit
-                ? "bg-brand-500 hover:bg-brand-600 active:bg-brand-700 shadow-[0_4px_22px_rgba(42,168,101,0.38)]"
+                ? "bg-brand-600 hover:bg-brand-700 active:bg-brand-800 shadow-[0_4px_22px_rgba(24,110,40,0.38)]"
                 : "bg-brand-300 cursor-not-allowed opacity-70"
             )}
           >
@@ -272,9 +272,9 @@ export default function SignInPage() {
           transition={{ duration: 0.4, delay: 0.28, ease }}
           className="flex items-center gap-4 my-6"
         >
-          <div className="flex-1 h-px bg-gray-200" />
-          <span className="text-[12px] font-semibold text-gray-400 tracking-widest">OR</span>
-          <div className="flex-1 h-px bg-gray-200" />
+          <div className="flex-1 h-px bg-sage-200" />
+          <span className="text-[12px] font-semibold text-ink-400 tracking-widest">OR</span>
+          <div className="flex-1 h-px bg-sage-200" />
         </motion.div>
 
         {/* ── Social buttons ───────────────────────────────────────── */}
@@ -289,7 +289,7 @@ export default function SignInPage() {
             type="button"
             onClick={() => handleOAuth("google")}
             disabled={busy}
-            className="w-full flex items-center justify-center gap-3 py-[15px] rounded-full bg-white border border-gray-200 text-[15px] font-semibold text-gray-800 shadow-sm hover:bg-gray-50 active:bg-gray-100 transition-all disabled:opacity-60"
+            className="w-full flex items-center justify-center gap-3 py-[15px] rounded-full bg-white border border-sage-200 text-[15px] font-semibold text-ink-700 shadow-sm hover:bg-sage-50 active:bg-sage-100 transition-all disabled:opacity-60"
           >
             {oauthLoading === "google" ? (
               <span className="w-4 h-4 rounded-full border-2 border-gray-300 border-t-gray-700 animate-spin" />
@@ -320,7 +320,7 @@ export default function SignInPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.44, ease }}
-          className="text-center text-[14px] text-gray-500 mt-8"
+          className="text-center text-[14px] text-ink-500 mt-8"
         >
           Don&apos;t have an account?{" "}
           <Link

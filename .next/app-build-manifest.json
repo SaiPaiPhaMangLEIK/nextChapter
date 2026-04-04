@@ -11,6 +11,56 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
+    "/onboarding/step-1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/step-1/page.js"
+    ],
+    "/onboarding/step-2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/step-2/page.js"
+    ],
+    "/onboarding/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/page.js"
+    ],
+    "/onboarding/step-3/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/step-3/page.js"
+    ],
+    "/onboarding/step-4/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/step-4/page.js"
+    ],
+    "/onboarding/step-5/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/step-5/page.js"
+    ],
+    "/onboarding/loading/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/loading/page.js"
+    ],
+    "/onboarding/preview/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/preview/page.js"
+    ],
+    "/onboarding/auth/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/auth/page.js"
+    ],
+    "/onboarding/step-7/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/onboarding/step-7/page.js"
+    ],
     "/(app)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -21,15 +71,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(app)/home/page.js"
     ],
-    "/onboarding/page": [
+    "/(app)/book/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/onboarding/page.js"
+      "static/chunks/app/(app)/book/[id]/page.js"
     ],
     "/(app)/library/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(app)/library/page.js"
+    ],
+    "/(app)/book/scan/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(app)/book/scan/page.js"
     ],
     "/(app)/map/page": [
       "static/chunks/webpack.js",

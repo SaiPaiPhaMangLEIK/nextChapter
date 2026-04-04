@@ -10,7 +10,7 @@ export default function StepSix() {
       className="min-h-screen flex flex-col items-center justify-center gap-6 px-6"
       style={{
         background:
-          "linear-gradient(180deg, #e6f0e3 0%, #f0f5ee 45%, #f5f2eb 100%)",
+          "linear-gradient(180deg, #DCF0DC 0%, #F1F5EB 45%, #F8FAF3 100%)",
       }}
     >
       <div className="text-center">

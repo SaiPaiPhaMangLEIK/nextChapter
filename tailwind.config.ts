@@ -9,60 +9,65 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // ── Brand Primary ───────────────────────────────────────────────────
         brand: {
-          50: "#f0faf4",
-          100: "#dcf5e6",
-          200: "#baeacf",
-          300: "#86d9ad",
-          400: "#4fc184",
-          500: "#2aa865",
-          600: "#1d8a51",
-          700: "#196e42",
-          800: "#185837",
-          900: "#15482e",
-          950: "#0a2819",
+          50:  "#F1F5EB", // Primary Surface — tonal card/section backgrounds
+          100: "#E0EDDB",
+          200: "#C4E0C4",
+          300: "#8CE08C", // Primary Green Light — accents & background fills
+          400: "#5CC85C",
+          500: "#3AAD3A",
+          600: "#186E28", // Primary Green — CTA buttons, active states, icons
+          700: "#145520",
+          800: "#0F3E18",
+          900: "#0A2910",
+          950: "#051508",
         },
+        // ── Backgrounds & Surfaces ──────────────────────────────────────────
         sage: {
-          50: "#f6f8f4",
-          100: "#eaefe5",
-          200: "#d3dfca",
-          300: "#b0c7a0",
-          400: "#87aa72",
-          500: "#678d52",
-          600: "#517040",
-          700: "#415934",
-          800: "#36482c",
-          900: "#2d3c25",
+          50:  "#F8FAF3", // App Background
+          100: "#F1F5EB", // Primary Surface
+          200: "#E2E3DC", // Surface Container — borders & dividers
+          300: "#C8CCC5",
+          400: "#ADB4A8", // Light Gray — placeholders & disabled states
+          500: "#8A9285",
+          600: "#5D645C", // Medium Gray — secondary text & metadata
+          700: "#474D46",
+          800: "#2D342C", // Deep Charcoal — primary text
+          900: "#1F261E",
         },
-        // Dark editorial palette for intro/landing page
+        // ── Dark editorial palette for intro/landing page ───────────────────
         forest: {
-          50:  "#f2f7f2",
-          100: "#deeade",
-          200: "#b9d2b9",
-          300: "#8ab68a",
-          400: "#5a9960",
-          500: "#3d7d44",
-          600: "#2e6434",
-          700: "#244f29",
-          800: "#1c3d20",
-          900: "#162f19",
-          950: "#0d1e10",
+          50:  "#F2F7F2",
+          100: "#DEE9DE",
+          200: "#B5D1B5",
+          300: "#82B282",
+          400: "#519151",
+          500: "#2F712F",
+          600: "#1F5A1F",
+          700: "#1A481A",
+          800: "#143814",
+          900: "#0E2A0E",
+          950: "#071507",
         },
+        // ── Typography ──────────────────────────────────────────────────────
         ink: {
-          50:  "#f5f5f0",
-          100: "#e8e6df",
-          200: "#d1cfc5",
-          300: "#b2af9f",
-          400: "#8e8a78",
-          500: "#726e5d",
-          600: "#5a5748",
-          700: "#464438",
-          800: "#2e2d25",
-          900: "#1c1c16",
+          50:  "#F5F5F0",
+          100: "#E8E6DF",
+          200: "#D1CFC5",
+          300: "#B2AF9F",
+          400: "#ADB4A8", // Light Gray — placeholders & disabled
+          500: "#5D645C", // Medium Gray — secondary text
+          600: "#474D46",
+          700: "#2D342C", // Deep Charcoal — primary text
+          800: "#232922",
+          900: "#1A1E19",
           950: "#111110",
         },
-        cream: "#faf9f6",
-        parchment: "#f5f0e8",
+        cream:     "#F8FAF3", // App Background — off-white, paper-like
+        parchment: "#F1F5EB", // Primary Surface — tonal tint
+        // ── Semantic ────────────────────────────────────────────────────────
+        warning: "#E6B34D", // Warning/Pending — soft gold
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
@@ -76,9 +81,9 @@ const config: Config = {
       boxShadow: {
         card:        "0 2px 16px 0 rgba(0,0,0,0.06)",
         "card-hover":"0 8px 32px 0 rgba(0,0,0,0.10)",
-        float:       "0 4px 24px 0 rgba(42,168,101,0.18)",
+        float:       "0 4px 24px 0 rgba(24,110,40,0.18)",
         "float-dark":"0 8px 40px 0 rgba(0,0,0,0.40)",
-        glow:        "0 0 40px 0 rgba(42,168,101,0.25)",
+        glow:        "0 0 40px 0 rgba(24,110,40,0.25)",
       },
       animation: {
         "fade-in":   "fadeIn 0.4s ease-out",

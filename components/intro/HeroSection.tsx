@@ -14,8 +14,8 @@ export default function HeroSection() {
         transition={{ duration: 0.6, ease }}
         className="mb-6"
       >
-        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-brand-400/40 bg-brand-500/10 backdrop-blur-sm">
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse" />
+        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-brand-300/40 bg-brand-600/10 backdrop-blur-sm">
+          <span className="w-1.5 h-1.5 rounded-full bg-brand-300 animate-pulse" />
           <span className="text-[10px] font-semibold tracking-[0.18em] text-brand-300 uppercase">
             Your Reading Evolution
           </span>

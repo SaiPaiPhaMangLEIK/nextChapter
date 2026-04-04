@@ -25,7 +25,7 @@ export default function ContinueButton({
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to top, rgba(245,242,235,0.92) 0%, transparent 100%)",
+            "linear-gradient(to top, rgba(241,245,235,0.95) 0%, transparent 100%)",
         }}
       />
 

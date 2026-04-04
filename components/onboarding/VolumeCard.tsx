@@ -27,7 +27,7 @@ export default function VolumeCard({
       className={cn(
         "relative flex flex-col items-center justify-center gap-3 w-full aspect-square rounded-[22px] transition-colors duration-200",
         selected
-          ? "bg-brand-500 shadow-[0_6px_28px_rgba(42,168,101,0.35)]"
+          ? "bg-brand-600 shadow-[0_6px_28px_rgba(24,110,40,0.35)]"
           : "bg-white border border-[#e2ebe0] shadow-[0_1px_8px_rgba(0,0,0,0.05)]"
       )}
     >
@@ -53,7 +53,7 @@ export default function VolumeCard({
         <span
           className={cn(
             "font-bold text-[20px] leading-none transition-colors duration-200",
-            selected ? "text-white" : "text-ink-900"
+            selected ? "text-white" : "text-ink-700"
           )}
         >
           {range}
