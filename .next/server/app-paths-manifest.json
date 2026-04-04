@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/onboarding/page": "app/onboarding/page.js",
+  "/(app)/home/page": "app/(app)/home/page.js",
+  "/(app)/library/page": "app/(app)/library/page.js",
+  "/(app)/map/page": "app/(app)/map/page.js",
+  "/(app)/profile/page": "app/(app)/profile/page.js"
+}
