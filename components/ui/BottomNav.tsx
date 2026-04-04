@@ -20,6 +20,9 @@ const RIGHT_ITEMS = [
 export default function BottomNav() {
   const pathname = usePathname();
 
+  // Hide on book detail pages
+  if (/^\/book\/(?!scan)[^/]+/.test(pathname)) return null;
+
   function isActive(href: string) {
     return pathname === href || pathname.startsWith(href + "/");
   }
@@ -40,7 +43,7 @@ export default function BottomNav() {
 
       {/* Nav bar — pb covers iOS home indicator without adding gap on desktop */}
       <div
-        className="bg-white/95 backdrop-blur-xl border-t border-gray-100 shadow-[0_-4px_24px_rgba(0,0,0,0.06)]"
+        className="bg-white/95 backdrop-blur-xl border-t border-sage-200 shadow-[0_-4px_24px_rgba(0,0,0,0.06)]"
         style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
       >
         <div className="flex items-center h-16 max-w-lg mx-auto px-2">
@@ -55,7 +58,7 @@ export default function BottomNav() {
                   "flex flex-col items-center justify-center gap-1 flex-1 h-14 rounded-2xl transition-all duration-200",
                   active
                     ? "text-brand-600"
-                    : "text-gray-400 hover:text-gray-600 active:scale-95"
+                    : "text-ink-400 hover:text-ink-600 active:scale-95"
                 )}
               >
                 <div
@@ -73,7 +76,7 @@ export default function BottomNav() {
                 <span
                   className={cn(
                     "text-[10px] font-medium leading-none transition-all",
-                    active ? "text-brand-600" : "text-gray-400"
+                    active ? "text-brand-600" : "text-ink-400"
                   )}
                 >
                   {label}
@@ -84,7 +87,7 @@ export default function BottomNav() {
 
           {/* Center spacer + Scan label */}
           <div className="flex flex-col items-center justify-end pb-2 flex-1 h-14">
-            <span className="text-[10px] font-medium text-gray-400">Scan</span>
+            <span className="text-[10px] font-medium text-ink-400">Scan</span>
           </div>
 
           {/* Right items */}
@@ -98,7 +101,7 @@ export default function BottomNav() {
                   "flex flex-col items-center justify-center gap-1 flex-1 h-14 rounded-2xl transition-all duration-200",
                   active
                     ? "text-brand-600"
-                    : "text-gray-400 hover:text-gray-600 active:scale-95"
+                    : "text-ink-400 hover:text-ink-600 active:scale-95"
                 )}
               >
                 <div
@@ -116,7 +119,7 @@ export default function BottomNav() {
                 <span
                   className={cn(
                     "text-[10px] font-medium leading-none transition-all",
-                    active ? "text-brand-600" : "text-gray-400"
+                    active ? "text-brand-600" : "text-ink-400"
                   )}
                 >
                   {label}

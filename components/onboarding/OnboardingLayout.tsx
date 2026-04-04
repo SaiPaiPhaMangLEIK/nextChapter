@@ -36,7 +36,7 @@ export default function OnboardingLayout({
       className="min-h-screen"
       style={{
         background:
-          "linear-gradient(180deg, #e6f0e3 0%, #f0f5ee 45%, #f5f2eb 100%)",
+          "linear-gradient(180deg, #DCF0DC 0%, #F1F5EB 45%, #F8FAF3 100%)",
       }}
     >
       {/* ── Progress header ──────────────────────────────────────── */}

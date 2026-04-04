@@ -53,8 +53,8 @@ export function statusLabel(status: ReadingStatus): string {
 export function statusColor(status: ReadingStatus): string {
   const colors: Record<ReadingStatus, string> = {
     want_to_read: "bg-blue-100 text-blue-700",
-    reading: "bg-brand-100 text-brand-700",
-    finished: "bg-sage-100 text-sage-700",
+    reading: "bg-brand-50 text-brand-600",
+    finished: "bg-brand-50 text-brand-600",
     paused: "bg-amber-100 text-amber-700",
     dnf: "bg-red-100 text-red-600",
   };

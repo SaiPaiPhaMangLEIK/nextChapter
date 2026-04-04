@@ -58,7 +58,7 @@ function AnalyzeCard() {
         <BookMarked size={18} className="text-brand-600" strokeWidth={1.8} />
       </div>
 
-      <h3 className="text-[18px] font-bold text-ink-900 leading-tight tracking-tight">
+      <h3 className="text-[18px] font-bold text-ink-700 leading-tight tracking-tight">
         Deep Narrative<br />Tracking
       </h3>
       <p className="mt-2.5 text-[13px] text-ink-400 leading-relaxed">
@@ -74,8 +74,8 @@ function AnalyzeCard() {
             style={{
               height: `${h}%`,
               background: i >= 6
-                ? "linear-gradient(to top, #2aa865, #4fc184)"
-                : "#dce8d8",
+                ? "linear-gradient(to top, #186E28, #8CE08C)"
+                : "#E2E3DC",
             }}
           />
         ))}
@@ -123,7 +123,7 @@ function CuratedShelvesCard() {
         className="absolute"
         style={{
           bottom: -30, left: -20, width: 180, height: 180, borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(42,168,101,0.20) 0%, transparent 65%)",
+          background: "radial-gradient(circle, rgba(24,110,40,0.20) 0%, transparent 65%)",
         }}
       />
 
@@ -158,7 +158,7 @@ function CuratedShelvesCard() {
 
           {/* Shelf fill bars */}
           <div className="mt-5 flex gap-1">
-            <div className="h-1 flex-[3] rounded-full" style={{ background: "rgba(42,168,101,0.65)" }} />
+            <div className="h-1 flex-[3] rounded-full" style={{ background: "rgba(24,110,40,0.65)" }} />
             <div className="h-1 flex-[2] rounded-full" style={{ background: "rgba(255,255,255,0.18)" }} />
             <div className="h-1 flex-1 rounded-full"  style={{ background: "rgba(255,255,255,0.09)" }} />
           </div>

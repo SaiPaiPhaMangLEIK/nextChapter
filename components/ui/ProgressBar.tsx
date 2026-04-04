@@ -15,7 +15,7 @@ const heights = {
 };
 
 const colors = {
-  green: "from-brand-400 to-brand-500",
+  green: "from-brand-300 to-brand-600",
   amber: "from-amber-400 to-amber-500",
   blue: "from-blue-400 to-blue-500",
 };
@@ -31,7 +31,7 @@ export default function ProgressBar({
 
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      <div className={cn("flex-1 bg-gray-100 rounded-full overflow-hidden", heights[size])}>
+      <div className={cn("flex-1 bg-sage-200 rounded-full overflow-hidden", heights[size])}>
         <div
           className={cn(
             "h-full rounded-full bg-gradient-to-r transition-all duration-500",
@@ -41,7 +41,7 @@ export default function ProgressBar({
         />
       </div>
       {showLabel && (
-        <span className="text-xs font-medium text-gray-500 w-8 text-right shrink-0">
+        <span className="text-xs font-medium text-ink-500 w-8 text-right shrink-0">
           {clamped}%
         </span>
       )}

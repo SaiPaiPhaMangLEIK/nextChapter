@@ -179,7 +179,7 @@ export default function PreviewPage() {
   return (
     <div
       className="min-h-screen pb-28"
-      style={{ background: "linear-gradient(180deg, #e8f0e5 0%, #f0f5ee 35%, #f5f2eb 100%)" }}
+      style={{ background: "linear-gradient(180deg, #DCF0DC 0%, #F1F5EB 35%, #F8FAF3 100%)" }}
     >
       {/* ── Header ─────────────────────────────────────────────────────── */}
       <div className="flex items-center justify-between px-5 pt-14 pb-4">
@@ -197,7 +197,7 @@ export default function PreviewPage() {
         <div className="flex items-center gap-2">
           <div className="w-[56px] h-[3px] bg-sage-200 rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-brand-500 rounded-full"
+              className="h-full bg-brand-600 rounded-full"
               initial={{ width: 0 }}
               animate={{ width: `${pct}%` }}
               transition={{ duration: 1, delay: 0.4, ease }}
@@ -269,7 +269,7 @@ export default function PreviewPage() {
             </div>
             {/* Badge */}
             <div className="absolute bottom-3 left-3">
-              <span className="inline-flex items-center gap-1 bg-brand-500 text-white text-[9.5px] font-bold tracking-[0.14em] uppercase px-2.5 py-1 rounded-full">
+              <span className="inline-flex items-center gap-1 bg-brand-600 text-white text-[9.5px] font-bold tracking-[0.14em] uppercase px-2.5 py-1 rounded-full">
                 <Star size={9} fill="currentColor" strokeWidth={0} />
                 Next Best Read
               </span>
@@ -318,7 +318,7 @@ export default function PreviewPage() {
 
           <div className="relative">
             {/* Vertical connector line */}
-            <div className="absolute left-[15px] top-4 bottom-4 w-[2px] rounded-full bg-gradient-to-b from-brand-400 via-brand-200 to-sage-100" />
+            <div className="absolute left-[15px] top-4 bottom-4 w-[2px] rounded-full bg-gradient-to-b from-brand-300 via-brand-100 to-sage-100" />
 
             <div className="flex flex-col gap-5">
               {pathItems.map((item) => (
@@ -327,9 +327,9 @@ export default function PreviewPage() {
                   <div
                     className={`w-[30px] h-[30px] rounded-full flex items-center justify-center shrink-0 z-10 ${
                       item.state === "done"
-                        ? "bg-brand-500"
+                        ? "bg-brand-600"
                         : item.state === "current"
-                        ? "bg-white border-2 border-brand-500 shadow-[0_0_0_4px_rgba(42,168,101,0.12)]"
+                        ? "bg-white border-2 border-brand-600 shadow-[0_0_0_4px_rgba(24,110,40,0.12)]"
                         : "bg-white border border-sage-200"
                     }`}
                   >
@@ -337,7 +337,7 @@ export default function PreviewPage() {
                       <Check size={14} className="text-white" strokeWidth={3} />
                     )}
                     {item.state === "current" && (
-                      <BookOpen size={13} className="text-brand-500" strokeWidth={2.2} />
+                      <BookOpen size={13} className="text-brand-600" strokeWidth={2.2} />
                     )}
                     {item.state === "locked" && (
                       <Lock size={12} className="text-sage-300" strokeWidth={2} />

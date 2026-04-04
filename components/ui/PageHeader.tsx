@@ -27,7 +27,7 @@ export default function PageHeader({
     <header
       className={cn(
         "sticky top-0 z-40 flex items-center justify-between px-5 h-14",
-        !transparent && "bg-cream/90 backdrop-blur-xl border-b border-gray-100/80",
+        !transparent && "bg-cream/90 backdrop-blur-xl border-b border-sage-200/80",
         className
       )}
     >
@@ -35,16 +35,16 @@ export default function PageHeader({
         {showBack && (
           <button
             onClick={() => router.back()}
-            className="flex items-center justify-center w-9 h-9 rounded-2xl bg-gray-100 text-gray-600 active:scale-95 transition-transform"
+            className="flex items-center justify-center w-9 h-9 rounded-2xl bg-sage-100 text-ink-600 active:scale-95 transition-transform"
           >
             <ArrowLeft size={18} strokeWidth={2} />
           </button>
         )}
         {title && (
           <div>
-            <h1 className="text-[17px] font-semibold text-gray-900 leading-tight">{title}</h1>
+            <h1 className="text-[17px] font-semibold text-ink-700 leading-tight">{title}</h1>
             {subtitle && (
-              <p className="text-xs text-gray-400 leading-tight mt-0.5">{subtitle}</p>
+              <p className="text-xs text-ink-400 leading-tight mt-0.5">{subtitle}</p>
             )}
           </div>
         )}

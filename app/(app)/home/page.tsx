@@ -60,7 +60,7 @@ function ContinueReadingCard({ book }: { book: Book }) {
           </div>
           <div className="h-[3px] bg-white/30 rounded-full overflow-hidden">
             <div
-              className="h-full bg-brand-400 rounded-full"
+              className="h-full bg-brand-300 rounded-full"
               style={{ width: `${pct}%` }}
             />
           </div>
@@ -69,10 +69,10 @@ function ContinueReadingCard({ book }: { book: Book }) {
 
       {/* Title + Author */}
       <div className="mt-2.5 px-0.5">
-        <p className="text-[13px] font-bold text-gray-900 leading-tight line-clamp-2">
+        <p className="text-[13px] font-bold text-ink-700 leading-tight line-clamp-2">
           {book.title}
         </p>
-        <p className="text-[11px] text-gray-400 mt-0.5 font-medium">{book.author}</p>
+        <p className="text-[11px] text-ink-400 mt-0.5 font-medium">{book.author}</p>
       </div>
     </Link>
   );
@@ -101,8 +101,8 @@ function StatCard({ icon, value, label, bg, iconBg, iconColor }: StatCardProps) 
       >
         {icon}
       </div>
-      <p className="text-[22px] font-bold text-gray-900 leading-none">{value}</p>
-      <p className="text-[11px] text-gray-500 font-medium leading-tight">{label}</p>
+        <p className="text-[22px] font-bold text-ink-700 leading-none">{value}</p>
+      <p className="text-[11px] text-ink-500 font-medium leading-tight">{label}</p>
     </div>
   );
 }
@@ -126,7 +126,7 @@ export default function HomePage() {
   return (
     <div className="mobile-page bg-cream animate-fade-in">
       {/* ─── Hero header ─────────────────────────────────────────── */}
-      <div className="relative px-5 pt-14 pb-6 bg-gradient-to-b from-brand-500 to-brand-600 text-white overflow-hidden">
+      <div className="relative px-5 pt-14 pb-6 bg-forest-900 text-white overflow-hidden">
         {/* Decorative circles */}
         <div className="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-white/10" />
         <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-white/5" />
@@ -181,15 +181,15 @@ export default function HomePage() {
         <div className="bg-white rounded-2xl p-4 shadow-card">
           <div className="flex items-center justify-between mb-3">
             <div>
-              <h2 className="text-[13px] font-semibold text-gray-900">2025 Reading Goal</h2>
-              <p className="text-xs text-gray-400 mt-0.5">
+              <h2 className="text-[13px] font-semibold text-ink-700">2025 Reading Goal</h2>
+              <p className="text-xs text-ink-400 mt-0.5">
                 {user.readingGoal!.booksCompleted} of {user.readingGoal!.booksPerYear} books
               </p>
             </div>
             <Badge variant="green">{goalPercent}%</Badge>
           </div>
           <ProgressBar value={goalPercent} size="md" showLabel={false} />
-          <p className="text-xs text-gray-400 mt-2">
+          <p className="text-xs text-ink-400 mt-2">
             {user.readingGoal!.booksPerYear - user.readingGoal!.booksCompleted} more books to
             reach your goal
           </p>
@@ -199,7 +199,7 @@ export default function HomePage() {
       {/* ─── Continue Reading ──────────────────────────────────── */}
       <div className="pt-6">
         <div className="flex items-center justify-between px-5 mb-4">
-          <h2 className="text-[16px] font-bold text-gray-900">Continue Reading</h2>
+          <h2 className="text-[16px] font-bold text-ink-700">Continue Reading</h2>
           <Link
             href="/library?tab=reading"
             className="flex items-center gap-1 text-brand-600 text-sm font-medium"
@@ -210,13 +210,13 @@ export default function HomePage() {
 
         {currentlyReading.length === 0 ? (
           <div className="mx-5 bg-white rounded-2xl p-6 shadow-card text-center">
-            <div className="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center mx-auto mb-3">
-              <BookOpen size={22} className="text-brand-500" />
+              <div className="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center mx-auto mb-3">
+              <BookOpen size={22} className="text-brand-600" />
             </div>
-            <p className="text-sm font-medium text-gray-700">Nothing in progress</p>
-            <p className="text-xs text-gray-400 mt-1">Start reading something today</p>
+            <p className="text-sm font-medium text-ink-700">Nothing in progress</p>
+            <p className="text-xs text-ink-400 mt-1">Start reading something today</p>
             <Link href="/library">
-              <button className="mt-3 px-4 py-2 bg-brand-500 text-white rounded-xl text-sm font-medium">
+              <button className="mt-3 px-4 py-2 bg-brand-600 text-white rounded-xl text-sm font-medium">
                 Browse Library
               </button>
             </Link>
@@ -276,9 +276,9 @@ export default function HomePage() {
       {/* ─── Daily Recommendation ─────────────────────────────── */}
       <div className="px-5 pt-6 pb-8">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-[16px] font-bold text-gray-900">Daily Recommendation</h2>
+          <h2 className="text-[16px] font-bold text-ink-700">Daily Recommendation</h2>
           <div className="flex items-center gap-1.5">
-            <Sparkles size={12} className="text-brand-500" />
+            <Sparkles size={12} className="text-brand-600" />
             <span className="text-[11px] font-semibold text-brand-600">Curated by AI</span>
           </div>
         </div>
@@ -325,14 +325,14 @@ export default function HomePage() {
                 Editor&apos;s Choice
               </span>
             </div>
-            <p className="font-bold text-[16px] text-gray-900 leading-tight">
+            <p className="font-bold text-[16px] text-ink-700 leading-tight">
               {featuredRec.book.title}
             </p>
-            <p className="text-[12px] text-gray-400 mt-0.5">{featuredRec.book.author}</p>
+            <p className="text-[12px] text-ink-400 mt-0.5">{featuredRec.book.author}</p>
 
             {/* AI explanation block */}
-            <div className="mt-4 bg-sage-50 rounded-[14px] p-4 border border-sage-100">
-              <p className="text-[12.5px] text-gray-600 leading-relaxed">
+            <div className="mt-4 bg-sage-50 rounded-[14px] p-4 border border-sage-200">
+              <p className="text-[12.5px] text-ink-500 leading-relaxed">
                 &ldquo;{featuredRec.reason}&rdquo;
               </p>
             </div>

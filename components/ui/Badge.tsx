@@ -8,8 +8,8 @@ interface BadgeProps {
 }
 
 const variants = {
-  default: "bg-gray-100 text-gray-600",
-  green: "bg-brand-100 text-brand-700",
+  default: "bg-sage-100 text-ink-500",
+  green: "bg-brand-50 text-brand-600",
   amber: "bg-amber-100 text-amber-700",
   blue: "bg-blue-100 text-blue-700",
   red: "bg-red-100 text-red-600",

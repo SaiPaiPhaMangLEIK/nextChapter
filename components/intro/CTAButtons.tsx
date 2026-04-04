@@ -16,7 +16,7 @@ export default function CTAButtons() {
     >
       {/* Primary — Get Started */}
       <Link href="/onboarding/step-1" className="block">
-        <button className="relative w-full flex items-center justify-center gap-2 py-4 px-6 rounded-full bg-brand-500 text-white text-[15px] font-semibold shadow-glow active:scale-[0.98] transition-all duration-200 overflow-hidden group">
+        <button className="relative w-full flex items-center justify-center gap-2 py-4 px-6 rounded-full bg-brand-600 text-white text-[15px] font-semibold shadow-glow active:scale-[0.98] transition-all duration-200 overflow-hidden group">
           <span className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
           Get Started
           <ArrowRight

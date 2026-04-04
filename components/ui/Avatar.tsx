@@ -31,7 +31,7 @@ export default function Avatar({ src, name, size = "md", className }: AvatarProp
   return (
     <div
       className={cn(
-        "rounded-full overflow-hidden bg-gradient-to-br from-brand-400 to-sage-500 flex items-center justify-center shrink-0",
+        "rounded-full overflow-hidden bg-gradient-to-br from-brand-300 to-brand-600 flex items-center justify-center shrink-0",
         sizes[size],
         className
       )}

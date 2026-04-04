@@ -6,7 +6,11 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(app)/home/page": {
+        "app/onboarding/step-1/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-2/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -14,7 +18,51 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
+        "app/onboarding/step-3/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-4/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-5/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/loading/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/preview/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/auth/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-7/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/home/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/book/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/(app)/library/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/book/scan/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/_not-found/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -29,9 +77,21 @@
       },
       "layer": {
         "app/page": "rsc",
-        "app/(app)/home/page": "rsc",
+        "app/onboarding/step-1/page": "rsc",
+        "app/onboarding/step-2/page": "rsc",
         "app/onboarding/page": "rsc",
+        "app/onboarding/step-3/page": "rsc",
+        "app/onboarding/step-4/page": "rsc",
+        "app/onboarding/step-5/page": "rsc",
+        "app/onboarding/loading/page": "rsc",
+        "app/onboarding/preview/page": "rsc",
+        "app/onboarding/auth/page": "rsc",
+        "app/onboarding/step-7/page": "rsc",
+        "app/(app)/home/page": "rsc",
+        "app/(app)/book/[id]/page": "rsc",
         "app/(app)/library/page": "rsc",
+        "app/(app)/book/scan/page": "rsc",
+        "app/_not-found/page": "rsc",
         "app/(app)/map/page": "rsc",
         "app/(app)/profile/page": "rsc"
       },
@@ -44,7 +104,11 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(app)/home/page": {
+        "app/onboarding/step-1/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-2/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -52,7 +116,51 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
+        "app/onboarding/step-3/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-4/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-5/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/loading/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/preview/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/auth/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-7/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/home/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/book/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/(app)/library/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/book/scan/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/_not-found/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -67,9 +175,21 @@
       },
       "layer": {
         "app/page": "rsc",
-        "app/(app)/home/page": "rsc",
+        "app/onboarding/step-1/page": "rsc",
+        "app/onboarding/step-2/page": "rsc",
         "app/onboarding/page": "rsc",
+        "app/onboarding/step-3/page": "rsc",
+        "app/onboarding/step-4/page": "rsc",
+        "app/onboarding/step-5/page": "rsc",
+        "app/onboarding/loading/page": "rsc",
+        "app/onboarding/preview/page": "rsc",
+        "app/onboarding/auth/page": "rsc",
+        "app/onboarding/step-7/page": "rsc",
+        "app/(app)/home/page": "rsc",
+        "app/(app)/book/[id]/page": "rsc",
         "app/(app)/library/page": "rsc",
+        "app/(app)/book/scan/page": "rsc",
+        "app/_not-found/page": "rsc",
         "app/(app)/map/page": "rsc",
         "app/(app)/profile/page": "rsc"
       },
@@ -82,7 +202,11 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(app)/home/page": {
+        "app/onboarding/step-1/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-2/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -90,7 +214,51 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
+        "app/onboarding/step-3/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-4/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-5/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/loading/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/preview/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/auth/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/onboarding/step-7/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/home/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/book/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/(app)/library/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(app)/book/scan/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/_not-found/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f0eb609edc66f7e74c8d23ed69d7fdcc8e041de75%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fd17a2d1159008a6a6ecedda8bd3c3df624512ea2%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%2C%7B%22id%22%3A%227fe202753cb13ca3aaf8c3a0e0e767365b26785493%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -105,9 +273,21 @@
       },
       "layer": {
         "app/page": "rsc",
-        "app/(app)/home/page": "rsc",
+        "app/onboarding/step-1/page": "rsc",
+        "app/onboarding/step-2/page": "rsc",
         "app/onboarding/page": "rsc",
+        "app/onboarding/step-3/page": "rsc",
+        "app/onboarding/step-4/page": "rsc",
+        "app/onboarding/step-5/page": "rsc",
+        "app/onboarding/loading/page": "rsc",
+        "app/onboarding/preview/page": "rsc",
+        "app/onboarding/auth/page": "rsc",
+        "app/onboarding/step-7/page": "rsc",
+        "app/(app)/home/page": "rsc",
+        "app/(app)/book/[id]/page": "rsc",
         "app/(app)/library/page": "rsc",
+        "app/(app)/book/scan/page": "rsc",
+        "app/_not-found/page": "rsc",
         "app/(app)/map/page": "rsc",
         "app/(app)/profile/page": "rsc"
       },
@@ -120,7 +300,11 @@
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
-        "app/(app)/home/page": {
+        "app/onboarding/step-1/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/onboarding/step-2/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
@@ -128,7 +312,51 @@
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
+        "app/onboarding/step-3/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/onboarding/step-4/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/onboarding/step-5/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/onboarding/loading/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/onboarding/preview/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/onboarding/auth/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/onboarding/step-7/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(app)/home/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(app)/book/[id]/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
         "app/(app)/library/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(app)/book/scan/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/_not-found/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fphapha%2FProject%2FNextChapter%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f18ac88967f6b88616ad810f8b34ddb93c249f69d%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%2C%22filename%22%3A%22node_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
@@ -143,9 +371,21 @@
       },
       "layer": {
         "app/page": "action-browser",
-        "app/(app)/home/page": "action-browser",
+        "app/onboarding/step-1/page": "action-browser",
+        "app/onboarding/step-2/page": "action-browser",
         "app/onboarding/page": "action-browser",
+        "app/onboarding/step-3/page": "action-browser",
+        "app/onboarding/step-4/page": "action-browser",
+        "app/onboarding/step-5/page": "action-browser",
+        "app/onboarding/loading/page": "action-browser",
+        "app/onboarding/preview/page": "action-browser",
+        "app/onboarding/auth/page": "action-browser",
+        "app/onboarding/step-7/page": "action-browser",
+        "app/(app)/home/page": "action-browser",
+        "app/(app)/book/[id]/page": "action-browser",
         "app/(app)/library/page": "action-browser",
+        "app/(app)/book/scan/page": "action-browser",
+        "app/_not-found/page": "action-browser",
         "app/(app)/map/page": "action-browser",
         "app/(app)/profile/page": "action-browser"
       },

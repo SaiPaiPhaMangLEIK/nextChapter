@@ -19,10 +19,10 @@ export default function OnboardingPage() {
     <div className="min-h-screen bg-cream flex flex-col items-center justify-between px-6 py-12 max-w-lg mx-auto">
       {/* ─── Logo ───────────────────────────────────────────────── */}
       <div className="flex items-center gap-2">
-        <div className="w-8 h-8 rounded-xl bg-brand-500 flex items-center justify-center">
+        <div className="w-8 h-8 rounded-xl bg-brand-600 flex items-center justify-center">
           <BookOpen size={16} className="text-white" />
         </div>
-        <span className="text-[17px] font-bold text-gray-900">NextChapter</span>
+        <span className="text-[17px] font-bold text-ink-700">NextChapter</span>
       </div>
 
       <div />

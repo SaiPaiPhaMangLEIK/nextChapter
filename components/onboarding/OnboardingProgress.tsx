@@ -47,7 +47,7 @@ export default function OnboardingProgress({
       <div className="flex-1 min-w-0">
         <div className="h-[3px] bg-sage-100 rounded-full overflow-hidden">
           <div
-            className="h-full bg-brand-500 rounded-full transition-all duration-500"
+            className="h-full bg-brand-600 rounded-full transition-all duration-500"
             style={{ width: `${pct}%` }}
           />
         </div>

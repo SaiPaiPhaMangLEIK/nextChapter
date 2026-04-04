@@ -103,7 +103,7 @@ export default function IntroPage() {
             className="absolute"
             style={{
               top: -80, left: -60, width: 400, height: 400, borderRadius: "50%",
-              background: "radial-gradient(circle, rgba(42,168,101,0.14) 0%, transparent 65%)",
+              background: "radial-gradient(circle, rgba(24,110,40,0.14) 0%, transparent 65%)",
             }}
           />
           {/* Warm amber glow — echoes the bookshelf photo warmth */}
@@ -132,7 +132,7 @@ export default function IntroPage() {
           className="relative z-10 flex items-center justify-between px-6 pt-14"
         >
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-xl bg-brand-500 flex items-center justify-center shadow-glow">
+            <div className="w-7 h-7 rounded-xl bg-brand-600 flex items-center justify-center shadow-glow">
               <BookOpen size={14} className="text-white" strokeWidth={2} />
             </div>
             <span className="text-[15px] font-semibold text-white tracking-[-0.01em]">
@@ -187,12 +187,12 @@ function CloserSection() {
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: "radial-gradient(ellipse at 85% 10%, rgba(42,168,101,0.22) 0%, transparent 55%)",
+            background: "radial-gradient(ellipse at 85% 10%, rgba(24,110,40,0.22) 0%, transparent 55%)",
           }}
         />
         <div className="relative z-10">
-          <div className="w-10 h-10 rounded-2xl bg-brand-500/20 border border-brand-500/30 flex items-center justify-center mb-4">
-            <BookOpen size={18} className="text-brand-400" strokeWidth={1.8} />
+          <div className="w-10 h-10 rounded-2xl bg-brand-600/20 border border-brand-600/30 flex items-center justify-center mb-4">
+            <BookOpen size={18} className="text-brand-300" strokeWidth={1.8} />
           </div>
           <h3 className="text-[22px] font-bold text-white leading-tight tracking-tight">
             A system for<br />
@@ -202,7 +202,7 @@ function CloserSection() {
             Not just tracking books — understanding where each one leads you next.
           </p>
           <Link href="/onboarding" className="block mt-6">
-            <button className="w-full py-3.5 rounded-full bg-brand-500 text-white text-[14px] font-semibold shadow-glow active:scale-[0.98] transition-all">
+            <button className="w-full py-3.5 rounded-full bg-brand-600 text-white text-[14px] font-semibold shadow-glow active:scale-[0.98] transition-all">
               Begin Your Journey
             </button>
           </Link>

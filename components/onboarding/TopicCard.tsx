@@ -29,7 +29,7 @@ export default function TopicCard({
         "transition-colors duration-200",
         selected
           ? "bg-forest-800 shadow-[0_8px_32px_rgba(22,47,25,0.28)]"
-          : "bg-white shadow-[0_1px_8px_rgba(0,0,0,0.05)] border border-[#e2ebe0]"
+          : "bg-white shadow-[0_1px_8px_rgba(0,0,0,0.05)] border border-sage-200"
       )}
     >
       {/* Icon */}
@@ -53,7 +53,7 @@ export default function TopicCard({
       <p
         className={cn(
           "font-bold text-[15px] leading-snug transition-colors",
-          selected ? "text-white" : "text-ink-900"
+            selected ? "text-white" : "text-ink-700"
         )}
       >
         {title}

@@ -42,7 +42,7 @@ export default function ScanPage() {
       {/* ─── Mode selection ─────────────────────────────────────── */}
       {mode === "options" && (
         <div className="px-5 pt-4 space-y-3">
-          <p className="text-sm text-gray-500 mb-4">How would you like to add a book?</p>
+          <p className="text-sm text-ink-500 mb-4">How would you like to add a book?</p>
 
           {[
             {
@@ -50,7 +50,7 @@ export default function ScanPage() {
               title: "Scan Book Cover",
               desc: "Point your camera at any book cover",
               action: () => setMode("scan"),
-              color: "bg-brand-500",
+              color: "bg-brand-600",
             },
             {
               icon: Search,
@@ -76,10 +76,10 @@ export default function ScanPage() {
                 <Icon size={22} className="text-white" />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-semibold text-gray-900">{title}</p>
-                <p className="text-xs text-gray-400 mt-0.5">{desc}</p>
+                <p className="text-[14px] font-semibold text-ink-700">{title}</p>
+                <p className="text-xs text-ink-400 mt-0.5">{desc}</p>
               </div>
-              <ArrowRight size={16} className="text-gray-300 shrink-0" />
+              <ArrowRight size={16} className="text-ink-300 shrink-0" />
             </button>
           ))}
         </div>
@@ -89,31 +89,31 @@ export default function ScanPage() {
       {mode === "search" && (
         <div className="px-5 pt-3 space-y-4">
           <div className="flex items-center gap-2 bg-white rounded-2xl px-4 py-3 shadow-card">
-            <Search size={16} className="text-gray-400 shrink-0" />
+            <Search size={16} className="text-ink-400 shrink-0" />
             <input
               type="text"
               placeholder="Search title, author, ISBN..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               autoFocus
-              className="flex-1 text-sm outline-none bg-transparent placeholder:text-gray-400"
+              className="flex-1 text-sm outline-none bg-transparent placeholder:text-ink-400"
             />
             {query && (
               <button onClick={() => setQuery("")}>
-                <X size={16} className="text-gray-400" />
+                <X size={16} className="text-ink-400" />
               </button>
             )}
           </div>
 
           {query.length > 1 && (
             <div className="space-y-3">
-              <p className="text-xs text-gray-400">Results</p>
+              <p className="text-xs text-ink-400">Results</p>
               {results.map((book) => (
                 <div
                   key={book.id}
                   className="flex items-center gap-3.5 bg-white rounded-2xl p-4 shadow-card"
                 >
-                  <div className="w-[46px] h-[68px] rounded-xl overflow-hidden bg-gray-100 shadow-sm shrink-0">
+                  <div className="w-[46px] h-[68px] rounded-xl overflow-hidden bg-sage-100 shadow-sm shrink-0">
                     {book.coverUrl ? (
                       <Image
                         src={book.coverUrl}
@@ -127,15 +127,15 @@ export default function ScanPage() {
                     )}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-[13px] font-semibold text-gray-900 truncate">{book.title}</p>
-                    <p className="text-xs text-gray-400 mt-0.5">{book.author}</p>
+                    <p className="text-[13px] font-semibold text-ink-700 truncate">{book.title}</p>
+                    <p className="text-xs text-ink-400 mt-0.5">{book.author}</p>
                     <div className="flex items-center gap-1.5 mt-1.5">
                       {book.genre?.slice(0, 2).map((g) => (
                         <Badge key={g} size="sm">{g}</Badge>
                       ))}
                     </div>
                   </div>
-                  <button className="w-9 h-9 rounded-2xl bg-brand-500 flex items-center justify-center shrink-0">
+                  <button className="w-9 h-9 rounded-2xl bg-brand-600 flex items-center justify-center shrink-0">
                     <Plus size={18} className="text-white" />
                   </button>
                 </div>
@@ -145,10 +145,10 @@ export default function ScanPage() {
 
           {!query && (
             <div className="text-center py-12">
-              <div className="w-16 h-16 rounded-3xl bg-gray-100 flex items-center justify-center mx-auto mb-4">
-                <Search size={28} className="text-gray-300" />
+              <div className="w-16 h-16 rounded-3xl bg-sage-100 flex items-center justify-center mx-auto mb-4">
+                <Search size={28} className="text-ink-300" />
               </div>
-              <p className="text-sm text-gray-500">Type to search for books</p>
+              <p className="text-sm text-ink-500">Type to search for books</p>
             </div>
           )}
         </div>
@@ -159,10 +159,10 @@ export default function ScanPage() {
         <div className="px-5 pt-4">
           <div className="bg-gray-900 rounded-3xl overflow-hidden aspect-[3/4] flex flex-col items-center justify-center gap-4 relative">
             <div className="absolute inset-8 border-2 border-white/40 rounded-2xl" />
-            <div className="absolute top-8 left-8 w-6 h-6 border-t-2 border-l-2 border-brand-400 rounded-tl-lg" />
-            <div className="absolute top-8 right-8 w-6 h-6 border-t-2 border-r-2 border-brand-400 rounded-tr-lg" />
-            <div className="absolute bottom-8 left-8 w-6 h-6 border-b-2 border-l-2 border-brand-400 rounded-bl-lg" />
-            <div className="absolute bottom-8 right-8 w-6 h-6 border-b-2 border-r-2 border-brand-400 rounded-br-lg" />
+            <div className="absolute top-8 left-8 w-6 h-6 border-t-2 border-l-2 border-brand-300 rounded-tl-lg" />
+            <div className="absolute top-8 right-8 w-6 h-6 border-t-2 border-r-2 border-brand-300 rounded-tr-lg" />
+            <div className="absolute bottom-8 left-8 w-6 h-6 border-b-2 border-l-2 border-brand-300 rounded-bl-lg" />
+            <div className="absolute bottom-8 right-8 w-6 h-6 border-b-2 border-r-2 border-brand-300 rounded-br-lg" />
             <Camera size={40} className="text-white/40" />
             <p className="text-white/60 text-sm text-center px-8">
               Camera access required to scan book covers
