@@ -121,14 +121,14 @@ export default function BookDetailPage() {
       <div className="px-5 pt-2 pb-5">
         <div className="bg-sage-50 rounded-3xl p-4 flex gap-4 items-center">
           {/* Cover with optional progress badge */}
-          <div className="relative shrink-0 w-[100px] h-[150px] rounded-2xl overflow-hidden bg-gray-900 shadow-xl">
+          <div className="group relative shrink-0 w-[100px] h-[150px] rounded-2xl overflow-hidden bg-gray-900 shadow-xl cursor-pointer">
             {book.coverUrl ? (
               <Image
                 src={book.coverUrl}
                 alt={book.title}
                 width={100}
                 height={150}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-brand-100 to-sage-100 flex items-center justify-center p-3">
@@ -139,10 +139,17 @@ export default function BookDetailPage() {
             )}
             {/* Progress % badge — shown in progress mode */}
             {isProgress && book.progress && (
-              <div className="absolute top-2 left-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-lg leading-tight">
+              <div className="absolute top-2 left-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-lg leading-tight z-10">
                 {book.progress.percentage}%
               </div>
             )}
+            {/* Hover overlay — entire cover is the Submit Page button */}
+            <button className="absolute inset-0 bg-ink-700/60 backdrop-blur-[2px] flex flex-col items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 active:bg-ink-700/75 transition-all duration-300">
+              <BookOpen size={20} className="text-white" />
+              <span className="text-[11px] font-bold text-white tracking-wide">
+                Submit Page
+              </span>
+            </button>
           </div>
 
           {/* Info */}
